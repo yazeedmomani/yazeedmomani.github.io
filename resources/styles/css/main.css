@@ -64,6 +64,10 @@ body {
   display: inline-block;
 }
 
+.nav__item:first-child:hover .logo-full--color {
+  fill: #113c7b;
+}
+
 .nav__item:not(:first-child) {
   padding: 1.5rem 2.5rem;
   float: right;

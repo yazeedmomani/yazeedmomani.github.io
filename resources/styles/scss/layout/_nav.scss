@@ -1,39 +1,38 @@
-.nav{
-    background-color: $color-lightgrey-light;
+.nav {
+  background-color: $color-lightgrey-light;
 
-    &__list{
-        list-style: none;
+  &__list {
+    list-style: none;
+  }
 
+  
+
+  &__item {
+    display: inline-block;
+
+    &:first-child:hover .logo-full--color {
+        fill: $color-primary-lighter;
+      }
+
+    &:not(:first-child) {
+      padding: $btn-padding;
+      float: right;
     }
 
-    &__item{
-        display: inline-block;
-        
-        &:not(:first-child){
-            padding: $btn-padding;
-            float: right;
-
-            
-        }
-
-        &--selected{
-            background-color: $color-lightgrey-dark;
-            color: $color-grey;
-        }
-
-        &:not(:first-child):not(&--selected):hover{
-            cursor: pointer;
-            background-color: $color-lightgrey-dark;
-            border-bottom: 3px solid $color-secondary;
-        }
-    }
-    
-    &__link{
-        text-decoration: none;
-        color: $color-grey;
-
-       
+    &--selected {
+      background-color: $color-lightgrey-dark;
+      color: $color-grey;
     }
 
-    
+    &:not(:first-child):not(&--selected):hover {
+      cursor: pointer;
+      background-color: $color-lightgrey-dark;
+      border-bottom: 3px solid $color-secondary;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey;
+  }
 }
