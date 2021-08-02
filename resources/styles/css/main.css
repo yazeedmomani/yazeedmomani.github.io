@@ -200,6 +200,7 @@ body {
 }
 
 .nav__item:not(:first-child) {
+  border-bottom: 3px solid #f7f7f7;
   padding: 1.5rem 2.5rem;
   float: right;
 }
@@ -207,6 +208,7 @@ body {
 .nav__item--selected {
   background-color: #eee;
   color: #777;
+  border-bottom: 3px solid #eee;
 }
 
 .nav__item:not(:first-child):not(.nav__item--selected):hover {

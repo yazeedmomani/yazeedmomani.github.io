@@ -5,16 +5,15 @@
     list-style: none;
   }
 
-  
-
   &__item {
     display: inline-block;
 
     &:first-child:hover .logo-full--color {
-        fill: $color-primary-lighter;
-      }
+      fill: $color-primary-lighter;
+    }
 
     &:not(:first-child) {
+      border-bottom: 3px solid $color-lightgrey-light;
       padding: $nav-btn-padding;
       float: right;
     }
@@ -22,6 +21,7 @@
     &--selected {
       background-color: $color-lightgrey-dark;
       color: $color-grey;
+      border-bottom: 3px solid $color-lightgrey-dark;
     }
 
     &:not(:first-child):not(&--selected):hover {
