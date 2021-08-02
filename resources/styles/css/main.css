@@ -18,3 +18,25 @@ body {
   line-height: 1.7;
   color: black;
 }
+
+.logo-full {
+  width: 15rem;
+  height: 348.5px;
+}
+
+.logo-full__text {
+  font-family: Lato-Bold, Lato;
+  font-weight: 700;
+}
+
+.logo-full__header {
+  font-size: 250px;
+}
+
+.logo-full__sub-header {
+  font-size: 80px;
+}
+
+.logo-full--color {
+  fill: #3dadff;
+}
