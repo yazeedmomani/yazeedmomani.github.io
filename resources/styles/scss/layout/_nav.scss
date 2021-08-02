@@ -22,6 +22,7 @@
       background-color: $color-lightgrey-dark;
       color: $color-grey;
       border-bottom: 3px solid $color-lightgrey-dark;
+      cursor: default;
     }
 
     &:not(:first-child):not(&--selected):hover {

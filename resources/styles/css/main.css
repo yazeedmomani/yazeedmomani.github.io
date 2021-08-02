@@ -209,6 +209,7 @@ body {
   background-color: #eee;
   color: #777;
   border-bottom: 3px solid #eee;
+  cursor: default;
 }
 
 .nav__item:not(:first-child):not(.nav__item--selected):hover {
