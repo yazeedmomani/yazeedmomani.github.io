@@ -1,6 +1,10 @@
 .logo-full {
   width: $logo-size;
 
+  &__icon {
+    transform: translate(421px, 366.5px) rotate(180deg);
+  }
+
   &__text {
     font-family: Lato-Bold, Lato;
     font-weight: 700;

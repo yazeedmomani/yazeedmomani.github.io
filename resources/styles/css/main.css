@@ -52,8 +52,46 @@ body {
   width: calc((100% - 3 * 6rem) / 4);
 }
 
+.nav {
+  background-color: #f7f7f7;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__item:not(:first-child) {
+  padding: 1.5rem 2.5rem;
+  float: right;
+}
+
+.nav__item--selected {
+  background-color: #eee;
+  color: #777;
+}
+
+.nav__item:not(:first-child):not(.nav__item--selected):hover {
+  cursor: pointer;
+  background-color: #eee;
+  border-bottom: 3px solid #3dadff;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #777;
+}
+
 .logo-full {
-  width: 15rem;
+  width: 16.3rem;
+}
+
+.logo-full__icon {
+  -webkit-transform: translate(421px, 366.5px) rotate(180deg);
+          transform: translate(421px, 366.5px) rotate(180deg);
 }
 
 .logo-full__text {
