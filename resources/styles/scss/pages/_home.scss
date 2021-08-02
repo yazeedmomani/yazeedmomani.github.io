@@ -28,10 +28,16 @@
     }
 
     &__text{
+        font-size: $first-header-font-size;
         color: $color-white;
         text-transform: uppercase;
         letter-spacing: 12px;
         text-align: center;
         width: $grid-width;
+    }
+
+    &__btn-container{
+        display: inline-block;
+        margin-left: 260px;
     }
 }
