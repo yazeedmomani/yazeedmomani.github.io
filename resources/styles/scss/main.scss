@@ -5,7 +5,9 @@
 @import "base/reset";
 @import "base/typography";
 
+@import "components/logo";
+
+@import "pages/home";
+
 @import "layout/grid";
 @import "layout/nav";
-
-@import "components/logo";

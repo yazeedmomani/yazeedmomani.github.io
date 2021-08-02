@@ -19,6 +19,55 @@ body {
   color: black;
 }
 
+.logo-full {
+  width: 16.3rem;
+}
+
+.logo-full__icon {
+  -webkit-transform: translate(421px, 366.5px) rotate(180deg);
+          transform: translate(421px, 366.5px) rotate(180deg);
+}
+
+.logo-full__text {
+  font-family: Lato-Bold, Lato;
+  font-weight: 700;
+}
+
+.logo-full__header {
+  font-size: 250px;
+}
+
+.logo-full__sub-header {
+  font-size: 80px;
+}
+
+.logo-full--color {
+  fill: #3dadff;
+}
+
+.header {
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__background-video {
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__color {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 14, 68, 0.4)), to(rgba(17, 60, 123, 0.4)));
+  background-image: linear-gradient(to right bottom, rgba(0, 14, 68, 0.4), rgba(17, 60, 123, 0.4));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
 .row {
   width: 114rem;
   margin: 0 auto;
@@ -87,30 +136,4 @@ body {
 .nav__link {
   text-decoration: none;
   color: #777;
-}
-
-.logo-full {
-  width: 16.3rem;
-}
-
-.logo-full__icon {
-  -webkit-transform: translate(421px, 366.5px) rotate(180deg);
-          transform: translate(421px, 366.5px) rotate(180deg);
-}
-
-.logo-full__text {
-  font-family: Lato-Bold, Lato;
-  font-weight: 700;
-}
-
-.logo-full__header {
-  font-size: 250px;
-}
-
-.logo-full__sub-header {
-  font-size: 80px;
-}
-
-.logo-full--color {
-  fill: #3dadff;
 }
