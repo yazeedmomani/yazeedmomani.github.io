@@ -211,7 +211,7 @@ body {
 }
 
 .btn--project-card-2:hover {
-  color: #aaa;
+  color: #d35ae6;
 }
 
 .btn--project-card-3:hover {
@@ -426,8 +426,8 @@ body {
 }
 
 .card__side--back-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#777), to(#aaa));
-  background-image: linear-gradient(to right bottom, #777, #aaa);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#4f1566), to(#d35ae6));
+  background-image: linear-gradient(to right bottom, #4f1566, #d35ae6);
 }
 
 .card__side--back-3 {
@@ -447,6 +447,7 @@ body {
 
 .card__picture {
   background-size: cover;
+  background-position: center;
   height: 23rem;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
@@ -460,11 +461,11 @@ body {
 }
 
 .card__picture-2 {
-  background-image: url(../../images/in-development-2x.png);
+  background-image: url(../../images/Percentage-Calculator-2x.png);
 }
 
 .card__picture-3 {
-  background-image: url(../../images/coming-up-2x.png);
+  background-image: url(../../images/in-development-2x.png);
 }
 
 .card__header {
@@ -491,8 +492,8 @@ body {
 }
 
 .card__header-span-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(170, 170, 170, 0.85)), to(rgba(119, 119, 119, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(170, 170, 170, 0.85), rgba(119, 119, 119, 0.85));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(211, 90, 230, 0.85)), to(rgba(79, 21, 102, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(211, 90, 230, 0.85), rgba(79, 21, 102, 0.85));
 }
 
 .card__header-span-3 {
