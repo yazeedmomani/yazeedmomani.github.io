@@ -6,6 +6,10 @@
   &__text {
     font-family: Lato-Bold, Lato;
     font-weight: 700;
+
+    &--not-link {
+      cursor: default;
+    }
   }
 
   &__header {
