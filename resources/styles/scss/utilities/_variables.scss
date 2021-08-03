@@ -23,6 +23,7 @@ $color-purple-light: #d35ae6;
 
 //fonts
 $first-header-font-size: 3.5rem;
+$second-header-font-size: 2.8rem;
 $paragraph-font-size: 1.6rem;
 
 //components
@@ -40,6 +41,24 @@ $slide-card-icon-width: 35%;
 
 $icon-link-gutter-horizontal: 2rem;
 $icon-link-gutter-vertical: 2rem;
+
+//project cards
+$color-locked-dark: #777;
+$color-locked-light: #aaa;
+$image-in-development: url(../../images/in-development-2x.png);
+$image-coming-up: url(../../images/coming-up-2x.png);
+
+$first-card-color-dark: $color-orange-dark;
+$first-card-color-light: $color-orange-light;
+$first-card-picture: url(../../images/Race-2x.png);
+
+$second-card-color-dark: $color-locked-dark;
+$second-card-color-light: $color-locked-light;
+$second-card-picture: $image-in-development;
+
+$third-card-color-dark: $color-locked-dark;
+$third-card-color-light: $color-locked-light;
+$third-card-picture: $image-coming-up;
 
 //grid
 $grid-width: 114rem;

@@ -32,4 +32,8 @@ body {
     &--primary{
       color: $color-secondary;
     }
+
+    &--centered{
+      text-align: center;
+    }
   }
