@@ -176,6 +176,7 @@ body {
 .slide-card__header {
   width: 100%;
   text-align: center;
+  cursor: default;
 }
 
 .slide-card__icon, .slide-card__header {
