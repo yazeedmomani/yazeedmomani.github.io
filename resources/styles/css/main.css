@@ -30,6 +30,10 @@
   margin-bottom: 8rem;
 }
 
+.margin-bottom-grid {
+  margin-bottom: 10rem;
+}
+
 *,
 *::after,
 *::before {
