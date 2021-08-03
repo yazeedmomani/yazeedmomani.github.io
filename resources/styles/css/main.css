@@ -326,6 +326,24 @@ body {
   fill: #3dadff;
 }
 
+.icon-link:hover .icon-link__icon {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+}
+
+.icon-link:hover .icon-link__icon--primary {
+  fill: white;
+}
+
+.icon-link:active .icon-link__icon {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.6);
+}
+
 .header {
   width: 100%;
   height: 95vh;
