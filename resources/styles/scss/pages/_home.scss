@@ -71,6 +71,10 @@
 
   }
 
+  &__center-box{
+    margin-top: 12rem;
+  }
+
   &__image {
     height: inherit;
     width: calc((100% - #{$gutter-horizontal}) / 2);

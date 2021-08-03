@@ -1,45 +1,59 @@
-.btn{
-    &:link,
-    &:visited{
-        display: inline-block;
-        text-decoration: none;
-        font-size: $btn-font-size;
-        padding: $btn-padding;
-        border-radius: .8rem;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    
-    &--primary{
-        background-color: $color-secondary;
-        color: $color-white;
-        box-shadow: 0 .5rem 2rem rgba($color-black, .6);
-        transition: all .2s;
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: $btn-font-size;
+    padding: $btn-padding;
+    border-radius: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 
-        &:hover{
-            transform: translateY(-3px);
-            box-shadow: 0 1.5rem 4rem rgba($color-black, .6);
-        }
+  &--primary {
+    background-color: $color-secondary;
+    color: $color-white;
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.6);
+    transition: all 0.2s;
 
-        &:active{
-            transform: translateY(-1px);
-            box-shadow: 0 1rem 3rem rgba($color-black, .6);
-        }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.6);
     }
 
-    &--secondary{
-        border: 1px solid $color-white;
-        color: $color-white;
-        transition: all .2s;
-
-        &:hover{
-            background-color: $color-white;
-            color: $color-secondary;
-            box-shadow: 0 1.5rem 4rem rgba($color-black, .6);
-        }
-
-        &:active{
-            box-shadow: 0 1rem 3rem rgba($color-black, .6);
-        }
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 1rem 3rem rgba($color-black, 0.6);
     }
+  }
+
+  &--border {
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-secondary;
+      transform: translateY(-3px);
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.6);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 1rem 3rem rgba($color-black, 0.6);
+    }
+  }
+
+  &--secondary-b {
+    border: 1px solid $color-white;
+    color: $color-white;
+  }
+
+  &--primary-b {
+    border: 1px solid $color-secondary;
+    color: $color-secondary;
+  }
+
+  &--small {
+    font-size: $small-btn-font-size !important;
+  }
 }
