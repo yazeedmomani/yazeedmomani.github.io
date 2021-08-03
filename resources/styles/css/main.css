@@ -179,6 +179,12 @@ body {
   margin: 0 auto;
 }
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
