@@ -59,10 +59,6 @@ body {
   margin-right: auto;
 }
 
-.logo-full {
-  width: 16.3rem;
-}
-
 .logo-full__icon {
   -webkit-transform: translate(421px, 366.5px) rotate(180deg);
           transform: translate(421px, 366.5px) rotate(180deg);
@@ -83,6 +79,14 @@ body {
 
 .logo-full--color {
   fill: #3dadff;
+}
+
+.logo-full--big {
+  width: 16.3rem;
+}
+
+.logo-full--small {
+  width: 13rem;
 }
 
 .btn:link, .btn:visited {
@@ -356,6 +360,10 @@ body {
 
 .about-me__content {
   height: inherit;
+}
+
+.about-me__header {
+  padding-top: 2rem;
 }
 
 .about-me__image {

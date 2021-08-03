@@ -61,6 +61,10 @@
     height: inherit;
   }
 
+  &__header{
+    padding-top: 2rem;
+  }
+
   &__image {
     height: inherit;
     width: calc((100% - #{$gutter-horizontal}) / 2);
