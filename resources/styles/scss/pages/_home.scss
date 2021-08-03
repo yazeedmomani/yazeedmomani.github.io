@@ -1,43 +1,78 @@
-.header{
+.header {
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+  position: relative;
+
+  &__background-video {
     width: 100%;
-    height: 95vh;
-    overflow: hidden;
-    position: relative;
-    
-    &__background-video{
-        width: 100%;
-        z-index: 1000;
-    }
-    
-    &__color{
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to right bottom, rgba($color-primary, .4), rgba($color-primary-lighter, .4));
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2000;
+    z-index: 1000;
+  }
 
-    }
+  &__color {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.4),
+      rgba($color-primary-lighter, 0.4)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+  }
 
-    &__text-container{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  &__text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    &__text{
-        font-size: $first-header-font-size;
-        color: $color-white;
-        text-transform: uppercase;
-        letter-spacing: 12px;
-        text-align: center;
-        width: $grid-width;
-    }
+  &__text {
+    font-size: $first-header-font-size;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+    width: $grid-width;
+  }
 
-    &__btn-container{
-        display: inline-block;
-        margin-left: 260px;
-    }
+  &__btn-container {
+    display: inline-block;
+    margin-left: 260px;
+  }
+}
+
+.about-me {
+  width: 100%;
+  height: 90vh;
+  background-color: $color-primary;
+  position: relative;
+
+  margin-bottom: 200px;
+
+  &__container {
+    height: inherit;
+  }
+
+  &__content {
+    height: inherit;
+  }
+
+  &__image {
+    height: inherit;
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.4),
+        rgba($color-primary-lighter, 0.4)
+      ),
+      url(../../images/my-image_2x.png);
+    background-size: cover;
+  }
 }
