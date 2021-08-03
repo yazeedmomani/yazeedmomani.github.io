@@ -1,0 +1,24 @@
+.icon-link {
+  display: inline-block;
+
+  &--horizontal {
+    &:not(:last-child) {
+      margin-right: $icon-link-gutter-horizontal;
+    }
+  }
+
+  &--vertical {
+    &:not(:last-child) {
+      margin-bottom: $icon-link-gutter-vertical;
+    }
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+
+    &--primary {
+      fill: $color-secondary;
+    }
+  }
+}

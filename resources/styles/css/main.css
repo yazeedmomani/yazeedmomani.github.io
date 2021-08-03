@@ -301,6 +301,27 @@ body {
   background-color: #000e44;
 }
 
+.icon-link {
+  display: inline-block;
+}
+
+.icon-link--horizontal:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.icon-link--vertical:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.icon-link__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon-link__icon--primary {
+  fill: #3dadff;
+}
+
 .header {
   width: 100%;
   height: 95vh;
@@ -366,6 +387,11 @@ body {
   padding-top: 2rem;
 }
 
+.about-me__contact-list {
+  padding-top: 1.1rem;
+  float: right;
+}
+
 .about-me__image {
   height: inherit;
   width: calc((100% - 6rem) / 2);
@@ -388,16 +414,13 @@ body {
   clear: both;
 }
 
-.row:not(:last-child) {
-  margin-bottom: 8rem;
-}
-
 .col {
   float: left;
 }
 
 .col:not(:last-child) {
   margin-right: 6rem;
+  margin-bottom: 8rem;
 }
 
 .col--1-of-2 {
