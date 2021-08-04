@@ -12,6 +12,10 @@
     &--primary {
       fill: $color-secondary;
     }
+
+    &--white {
+      fill: $color-white;
+    }
   }
 
   &:hover &__icon {
@@ -20,6 +24,10 @@
 
     &--primary {
       fill: white;
+    }
+
+    &--white {
+      fill: $color-secondary;
     }
   }
 

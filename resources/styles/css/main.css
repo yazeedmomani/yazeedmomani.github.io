@@ -545,6 +545,10 @@ body {
   fill: #3dadff;
 }
 
+.icon-link__icon--white {
+  fill: #fff;
+}
+
 .icon-link:hover .icon-link__icon {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -554,6 +558,10 @@ body {
 
 .icon-link:hover .icon-link__icon--primary {
   fill: white;
+}
+
+.icon-link:hover .icon-link__icon--white {
+  fill: #3dadff;
 }
 
 .icon-link:active .icon-link__icon {
