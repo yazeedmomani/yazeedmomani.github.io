@@ -532,12 +532,8 @@ body {
   display: inline-block;
 }
 
-.icon-link--horizontal:not(:last-child) {
+.icon-link:not(:last-child) {
   margin-right: 2rem;
-}
-
-.icon-link--vertical:not(:last-child) {
-  margin-bottom: 2rem;
 }
 
 .icon-link__icon {
