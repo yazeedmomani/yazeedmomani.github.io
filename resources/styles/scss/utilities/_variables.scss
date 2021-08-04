@@ -42,6 +42,15 @@ $slide-card-icon-width: 35%;
 $icon-link-gutter-horizontal: 2rem;
 $icon-link-gutter-vertical: 2rem;
 
+$shadow-small: 0 0.5rem 2rem;
+$shadow-medium: 0 1rem 3rem;
+$shadow-big: 0 1.5rem 4rem;
+
+$shadow-opacity-high: rgba($color-black, 0.6);
+$shadow-opacity-low: rgba($color-black, 0.15);
+
+$btn-hover-translate: translateY(-3px);
+$btn-active-translate: translateY(-1px);
 //project cards
 $color-locked-dark: #777;
 $color-locked-light: #aaa;

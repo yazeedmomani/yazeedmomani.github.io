@@ -19,8 +19,8 @@
   }
 
   &:hover &__icon {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 3rem rgba($color-black, 0.6);
+    transform: $btn-hover-translate;
+    box-shadow: $shadow-medium $shadow-opacity-high;
 
     &--primary {
       fill: $color-white;
@@ -32,7 +32,7 @@
   }
 
   &:active &__icon {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.6);
+    transform: $btn-active-translate;
+    box-shadow: $shadow-small $shadow-opacity-high;
   }
 }

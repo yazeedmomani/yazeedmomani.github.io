@@ -529,7 +529,7 @@ body {
 
 .card--disabled .card__side--front,
 .card--disabled .card__side--back {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .icon-link {
