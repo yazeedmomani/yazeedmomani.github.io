@@ -757,3 +757,7 @@ body {
   bottom: 0;
   font-weight: normal;
 }
+
+.footer__margin-box {
+  margin-top: 4.8rem;
+}
