@@ -2,6 +2,16 @@
   height: 50vh;
   background-color: $color-black-light;
 
+  &__all-container{
+      height: 100%;
+    position: relative;
+  }
+
+  &__bottom-box{
+      position: absolute;
+      bottom: 0;
+  }
+
   &__contact-row {
     position: relative;
   }
@@ -20,7 +30,7 @@
   }
 
   &__logo-row{
-      padding-top: 2.4rem;
+      padding: 2.4rem 0 4.8rem;
       border-top: 1px solid $color-lightgrey-dark;
   }
 

@@ -749,6 +749,16 @@ body {
   background-color: #292929;
 }
 
+.footer__all-container {
+  height: 100%;
+  position: relative;
+}
+
+.footer__bottom-box {
+  position: absolute;
+  bottom: 0;
+}
+
 .footer__contact-row {
   position: relative;
 }
@@ -767,7 +777,7 @@ body {
 }
 
 .footer__logo-row {
-  padding-top: 2.4rem;
+  padding: 2.4rem 0 4.8rem;
   border-top: 1px solid #eee;
 }
 
