@@ -2,6 +2,10 @@
   margin-right: 10rem;
 }
 
+.margin-right-small {
+  margin-right: 2.5rem;
+}
+
 .margin-top-bigger {
   margin-top: 10rem;
 }
@@ -765,4 +769,8 @@ body {
 .footer__logo-row {
   padding-top: 2.4rem;
   border-top: 1px solid #eee;
+}
+
+.footer__btn-container {
+  float: right;
 }
