@@ -1,4 +1,17 @@
 .footer {
   height: 50vh;
   background-color: $color-black-light;
+
+  &__contact-row {
+    position: relative;
+  }
+
+  &__copyright {
+    font-size: $paragraph-font-size;
+    color: $color-white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: normal;
+  }
 }

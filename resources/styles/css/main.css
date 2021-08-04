@@ -744,3 +744,16 @@ body {
   height: 50vh;
   background-color: #292929;
 }
+
+.footer__contact-row {
+  position: relative;
+}
+
+.footer__copyright {
+  font-size: 1.6rem;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: normal;
+}
