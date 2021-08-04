@@ -12,11 +12,7 @@
   &__color {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary, 0.4),
-      rgba($color-primary-lighter, 0.4)
-    );
+    background-image: $cover-image-color;
     position: absolute;
     top: 0;
     left: 0;
@@ -34,7 +30,7 @@
     font-size: $first-header-font-size;
     color: $color-white;
     text-transform: uppercase;
-    letter-spacing: 12px;
+    letter-spacing: $header-letter-spacing;
     text-align: center;
     width: $grid-width;
   }
@@ -59,17 +55,16 @@
     height: inherit;
   }
 
-  &__header{
+  &__header {
     padding-top: 2rem;
   }
 
-  &__contact-list{
+  &__contact-list {
     padding-top: 1.1rem;
     float: right;
-
   }
 
-  &__center-box{
+  &__center-box {
     margin-top: 12rem;
   }
 
@@ -79,12 +74,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary, 0.4),
-        rgba($color-primary-lighter, 0.4)
-      ),
-      url(../../images/my-image_2x.png);
+    background-image: $cover-image-color, $my-image;
     background-size: cover;
   }
 }

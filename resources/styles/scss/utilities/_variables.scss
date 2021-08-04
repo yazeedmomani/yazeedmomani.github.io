@@ -1,3 +1,4 @@
+//TODO clean up this file
 //colors
 $color-primary: #000e44;
 $color-primary-light: #2e3c67;
@@ -51,7 +52,20 @@ $shadow-opacity-low: rgba($color-black, 0.15);
 
 $btn-hover-translate: translateY(-3px);
 $btn-active-translate: translateY(-1px);
+$btn-border-radius: 0.8rem;
+
+$cover-image-color: linear-gradient(
+  to right bottom,
+  rgba($color-primary, 0.4),
+  rgba($color-primary-lighter, 0.4)
+);
+$my-image: url(../../images/my-image_2x.png);
+$header-letter-spacing: 12px;
+
 //project cards
+$project-card-border-radius: 3rem;
+$project-card-height: 50rem;
+
 $color-locked-dark: #777;
 $color-locked-light: #aaa;
 $image-in-development: url(../../images/in-development-2x.png);
@@ -73,3 +87,8 @@ $third-card-picture: $image-in-development;
 $grid-width: 114rem;
 $gutter-vertical: 10rem;
 $gutter-horizontal: 6rem;
+$grid-col-1-of-2-width: calc((100% - #{$gutter-horizontal}) / 2);
+$grid-col-1-of-3-width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+$grid-col-2-of-3-width: calc(
+  (2 * (100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+);

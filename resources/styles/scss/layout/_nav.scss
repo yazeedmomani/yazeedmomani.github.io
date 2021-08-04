@@ -8,16 +8,19 @@
   &__item {
     display: inline-block;
 
-    &:first-child:hover .logo-full--color {
-      fill: $color-primary-lighter;
-    }
-
+    //logo
     &:not(:first-child) {
       border-bottom: 3px solid $color-lightgrey-light;
       padding: $nav-btn-padding;
       float: right;
     }
 
+    //logo hover
+    &:first-child:hover .logo-full--color {
+      fill: $color-primary-lighter;
+    }
+
+    //selected btn
     &--selected {
       background-color: $color-lightgrey-dark;
       color: $color-grey;
@@ -25,6 +28,7 @@
       cursor: default;
     }
 
+    //not selected btn
     &:not(:first-child):not(&--selected):hover {
       cursor: pointer;
       background-color: $color-lightgrey-dark;
@@ -32,6 +36,7 @@
     }
   }
 
+  //btn text
   &__link {
     text-decoration: none;
     color: $color-grey;

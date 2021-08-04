@@ -162,9 +162,10 @@
   }
 }
 
+//project cards
 .card {
   //layout and animation
-  height: 50rem;
+  height: $project-card-height;
   position: relative;
   -moz-perspective: 150rem;
   perspective: 150rem;
@@ -175,7 +176,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 3rem;
+    border-radius: $project-card-border-radius;
     box-shadow: $shadow-big $shadow-opacity-low;
     overflow: hidden;
     backface-visibility: hidden;
@@ -227,8 +228,8 @@
     background-size: cover;
     background-position: center;
     height: 23rem;
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
+    border-top-left-radius: $project-card-border-radius;
+    border-top-right-radius: $project-card-border-radius;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -309,7 +310,7 @@
     display: block;
     margin: 0 auto;
   }
-
+  //TODO create disable class
   &--disabled &__side--front,
   &--disabled &__side--back {
     opacity: 0.8;

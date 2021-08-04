@@ -1,3 +1,4 @@
+//TODO fix &__icon
 .logo-full {
   &__icon {
     transform: translate(421px, 366.5px) rotate(180deg);
@@ -20,6 +21,7 @@
     font-size: 80px;
   }
 
+  //TODO change &--color to &__color
   &--color {
     fill: $color-secondary;
   }
