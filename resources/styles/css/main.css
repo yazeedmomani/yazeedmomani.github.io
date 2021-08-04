@@ -735,3 +735,8 @@ body {
   width: 29.7%;
   margin: 0 auto;
 }
+
+.footer {
+  height: 50vh;
+  background-color: #292929;
+}
