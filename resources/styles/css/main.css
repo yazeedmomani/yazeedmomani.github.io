@@ -557,7 +557,7 @@ body {
 }
 
 .icon-link:hover .icon-link__icon--primary {
-  fill: white;
+  fill: #fff;
 }
 
 .icon-link:hover .icon-link__icon--white {
