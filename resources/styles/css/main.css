@@ -761,3 +761,8 @@ body {
 .footer__margin-box {
   margin-top: 4.8rem;
 }
+
+.footer__logo-row {
+  padding-top: 4.8rem;
+  border-top: 1px solid #eee;
+}
