@@ -84,14 +84,29 @@ $disabled-back-side: linear-gradient(
 $first-card-color-dark: $color-orange-dark;
 $first-card-color-light: $color-orange-light;
 $first-card-picture: url(../../images/Race-2x.png);
+$first-card-title: "Race";
+$first-card-details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet
+consectetur adipisicing elit. Aperiam, ipsum sapiente
+aspernatur.";
 
 $second-card-color-dark: #4f1566;
 $second-card-color-light: #d35ae6;
 $second-card-picture: url(../../images/Percentage-Calculator-2x.png);
+$second-card-title: "Percentage Calculator V.2";
+$second-card-details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet
+consectetur adipisicing elit. Aperiam, ipsum sapiente
+aspernatur.";
 
 $third-card-color-dark: $color-primary;
 $third-card-color-light: $color-secondary;
 $third-card-picture: $image-in-development;
+$third-card-title: "Liquidizer";
+$third-card-details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet
+consectetur adipisicing elit.Aperiam, ipsum sapiente
+aspernatur.";
 
 //grid
 $grid-width: 114rem;

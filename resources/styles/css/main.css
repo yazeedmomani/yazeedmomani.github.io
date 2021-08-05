@@ -503,10 +503,34 @@ body {
   background-image: linear-gradient(to right bottom, rgba(61, 173, 255, 0.85), rgba(0, 14, 68, 0.85));
 }
 
+.card__project-title-1::after {
+  content: "Race";
+}
+
+.card__project-title-2::after {
+  content: "Percentage Calculator V.2";
+}
+
+.card__project-title-3::after {
+  content: "Liquidizer";
+}
+
 .card__details {
   text-align: center;
   width: 80%;
   margin: 5.5rem auto;
+}
+
+.card__details-1::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
+}
+
+.card__details-2::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
+}
+
+.card__details-3::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet\a consectetur adipisicing elit.Aperiam, ipsum sapiente\a aspernatur.";
 }
 
 .card__center-box {
@@ -523,6 +547,28 @@ body {
   height: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.card__side--back-4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 173, 255, 0.85)), to(rgba(0, 14, 68, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(61, 173, 255, 0.85), rgba(0, 14, 68, 0.85));
+}
+
+.card__picture-4 {
+  background-image: url(../../images/in-development-2x.png);
+}
+
+.card__header-span-4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 173, 255, 0.85)), to(rgba(0, 14, 68, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(61, 173, 255, 0.85), rgba(0, 14, 68, 0.85));
+}
+
+.card__project-title-4::after {
+  content: "Liquidizer";
+}
+
+.card__details-4::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet\a consectetur adipisicing elit.Aperiam, ipsum sapiente\a aspernatur.";
 }
 
 /*
@@ -567,7 +613,7 @@ add ".disabled" next to ".card" to disable project card
   content: "Coming Up!";
 }
 
-.disabled--upcoming .card__header-span--disabled-text {
+.disabled--upcoming .card__project-title {
   display: none;
 }
 

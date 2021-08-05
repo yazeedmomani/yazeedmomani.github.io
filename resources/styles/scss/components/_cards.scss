@@ -287,10 +287,36 @@
     }
   }
 
+  &__project-title{
+    &-1::after{
+      content: $first-card-title;
+    }
+
+    &-2::after{
+      content: $second-card-title;
+    }
+
+    &-3::after{
+      content: $third-card-title;
+    }
+  }
+
   &__details {
     text-align: center;
     width: 80%;
     margin: 5.5rem auto;
+
+    &-1::after{
+      content: $first-card-details;
+    }
+
+    &-2::after{
+      content: $second-card-details;
+    }
+
+    &-3::after{
+      content: $third-card-details;
+    }
   }
 
   //Back side
@@ -305,6 +331,47 @@
     height: 100%;
     display: block;
     margin: 0 auto;
+  }
+}
+
+//more project cards
+.card{
+  &__side--back{
+    &-4{
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($third-card-color-light, 0.85),
+        rgba($third-card-color-dark, 0.85)
+      );
+    }
+  }
+
+  &__picture{
+    &-4{
+      background-image: $third-card-picture;
+    }
+  }
+
+  &__header-span{
+    &-4{
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($third-card-color-light, 0.85),
+        rgba($third-card-color-dark, 0.85)
+      );
+    }
+  }
+
+  &__project-title{
+    &-4::after{
+      content: $third-card-title;
+    }
+  }
+
+  &__details{
+    &-4::after{
+      content: $third-card-details;
+    }
   }
 }
 
@@ -349,14 +416,12 @@ add ".disabled" next to ".card" to disable project card
       background-image: $image-coming-up;
     }
 
-    & .card__header-span {
-      &::after {
-        content: "Coming Up!";
-      }
+    & .card__header-span::after {
+      content: "Coming Up!";
+    }
 
-      &--disabled-text {
-        display: none;
-      }
+    & .card__project-title{
+      display: none;
     }
   }
 }
