@@ -1,4 +1,5 @@
 //TODO clean up this file
+//******************************************************************************************************************
 //colors
 $color-primary: #000e44;
 $color-primary-light: #2e3c67;
@@ -22,50 +23,90 @@ $color-orange-light: #ffb900;
 $color-purple-dark: #4f1566;
 $color-purple-light: #d35ae6;
 
+//******************************************************************************************************************
 //fonts
 $first-header-font-size: 3.5rem;
 $second-header-font-size: 2.8rem;
 $paragraph-font-size: 1.6rem;
 
-//components
-$logo-size-big: 16.3rem;
-$logo-size-small: 13rem;
-
-$nav-btn-padding: 1.5rem 2.5rem;
-
-$btn-padding: 1rem 4rem;
-$btn-font-size: 2.8rem;
-$small-btn-font-size: 1.6rem;
-
-$slide-card-height: 40rem;
-$slide-card-icon-width: 35%;
-
-$icon-link-gutter-horizontal: 2rem;
-$icon-link-gutter-vertical: 2rem;
-
+//******************************************************************************************************************
+//shadow
+//shadow size
 $shadow-small: 0 0.5rem 2rem;
 $shadow-medium: 0 1rem 3rem;
 $shadow-big: 0 1.5rem 4rem;
 
+//shadow opacity
 $shadow-opacity-high: rgba($color-black, 0.6);
 $shadow-opacity-low: rgba($color-black, 0.15);
 
-$btn-hover-translate: translateY(-3px);
-$btn-active-translate: translateY(-1px);
-$btn-border-radius: 0.8rem;
+//******************************************************************************************************************
+//helpers
+$margin-small: 1.2rem;
+$margin-medium: 2.4rem;
+$margin-large: 4.8rem;
+$margin-xlarge: 7.2rem;
 
+//******************************************************************************************************************
+//grid
+$grid-width: 114rem;
+$gutter-vertical: 10rem;
+$gutter-horizontal: 6rem;
+$grid-col-1-of-2-width: calc((100% - #{$gutter-horizontal}) / 2);
+$grid-col-1-of-3-width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+$grid-col-2-of-3-width: calc(
+  (2 * (100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+);
+
+//******************************************************************************************************************
+//home page
+//header
 $cover-image-color: linear-gradient(
   to right bottom,
   rgba($color-primary, 0.4),
   rgba($color-primary-lighter, 0.4)
 );
-$my-image: url(../../images/my-image_2x.png);
 $header-letter-spacing: 12px;
 
+//about me section
+$my-image: url(../../images/my-image_2x.png);
+
+//******************************************************************************************************************
+//components
+//******************************************************************************************************************
+//logo
+$logo-size-big: 16.3rem;
+$logo-size-small: 13rem;
+
+//******************************************************************************************************************
+//btn
+//btn border radius
+$btn-border-radius: 0.8rem;
+
+//btn size
+$btn-font-size: 2.8rem;
+$small-btn-font-size: 1.6rem;
+
+//btn animation
+$btn-hover-translate: translateY(-3px);
+$btn-active-translate: translateY(-1px);
+
+//******************************************************************************************************************
+//slide-card
+$slide-card-height: 40rem;
+$slide-card-icon-width: 35%;
+
+//******************************************************************************************************************
+//icon-link
+$icon-link-gutter: 2rem;
+
+//******************************************************************************************************************
 //project cards
+//project card styles
 $project-card-border-radius: 3rem;
 $project-card-height: 50rem;
 
+//disabled project card styles
 $color-disabled-dark: #777;
 $color-disabled-light: #aaa;
 $image-in-development: url(../../images/in-development-2x.png);
@@ -81,6 +122,10 @@ $disabled-back-side: linear-gradient(
   $color-disabled-light
 );
 
+//******************************************************************************************************************
+//most recent project cards
+//******************************************************************************************************************
+//first card
 $first-card-color-dark: $color-orange-dark;
 $first-card-color-light: $color-orange-light;
 $first-card-picture: url(../../images/Race-2x.png);
@@ -90,6 +135,7 @@ Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet
 consectetur adipisicing elit. Aperiam, ipsum sapiente
 aspernatur.";
 
+//second card
 $second-card-color-dark: #4f1566;
 $second-card-color-light: #d35ae6;
 $second-card-picture: url(../../images/Percentage-Calculator-2x.png);
@@ -99,6 +145,7 @@ Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet
 consectetur adipisicing elit. Aperiam, ipsum sapiente
 aspernatur.";
 
+//third card
 $third-card-color-dark: $color-primary;
 $third-card-color-light: $color-secondary;
 $third-card-picture: $image-in-development;
@@ -107,19 +154,4 @@ $third-card-details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet
 consectetur adipisicing elit.Aperiam, ipsum sapiente
 aspernatur.";
-
-//grid
-$grid-width: 114rem;
-$gutter-vertical: 10rem;
-$gutter-horizontal: 6rem;
-$grid-col-1-of-2-width: calc((100% - #{$gutter-horizontal}) / 2);
-$grid-col-1-of-3-width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-$grid-col-2-of-3-width: calc(
-  (2 * (100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
-);
-
-//helpers
-$margin-small: 1.2rem;
-$margin-medium: 2.4rem;
-$margin-large: 4.8rem;
-$margin-xlarge: 7.2rem;
+//******************************************************************************************************************

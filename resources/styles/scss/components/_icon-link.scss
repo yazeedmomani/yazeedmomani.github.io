@@ -2,7 +2,7 @@
   display: inline-block;
 
   &:not(:last-child) {
-    margin-right: $icon-link-gutter-horizontal;
+    margin-right: $icon-link-gutter;
   }
 
   &__icon {
