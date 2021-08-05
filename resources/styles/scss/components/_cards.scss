@@ -185,34 +185,36 @@
     margin: 0 auto;
   }
 
-  &-1 {
-    @include project-card(
-      $color-orange-light,
-      $color-orange-dark,
-      $first-card-picture,
-      $first-card-title,
-      $first-card-details
-    );
-  }
+  &--DB {
+    &-1 {
+      @include project-card(
+        $color-orange-light,
+        $color-orange-dark,
+        $first-card-picture,
+        $first-card-title,
+        $first-card-details
+      );
+    }
 
-  &-2 {
-    @include project-card(
-      $color-purple-light,
-      $color-purple-dark,
-      $second-card-picture,
-      $second-card-title,
-      $second-card-details
-    );
-  }
+    &-2 {
+      @include project-card(
+        $color-purple-light,
+        $color-purple-dark,
+        $second-card-picture,
+        $second-card-title,
+        $second-card-details
+      );
+    }
 
-  &-3 {
-    @include project-card(
-      $color-secondary,
-      $color-primary,
-      $third-card-picture,
-      $third-card-title,
-      $third-card-details
-    );
+    &-3 {
+      @include project-card(
+        $color-secondary,
+        $color-primary,
+        $third-card-picture,
+        $third-card-title,
+        $third-card-details
+      );
+    }
   }
 }
 
