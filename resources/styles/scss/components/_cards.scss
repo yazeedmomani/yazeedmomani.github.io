@@ -23,8 +23,9 @@
     }
   }
 
-  &:hover &__face{
-    &--header, &--content{
+  &:hover &__face {
+    &--header,
+    &--content {
       transform: translate(0);
     }
   }
@@ -84,15 +85,15 @@
     }
   }
 
-  &--1{
+  &--1 {
     @include slide-card-style($color-purple-dark);
   }
 
-  &--2{
+  &--2 {
     @include slide-card-style($color-orange-dark);
   }
 
-  &--3{
+  &--3 {
     @include slide-card-style($color-primary);
   }
 }
@@ -184,16 +185,34 @@
     margin: 0 auto;
   }
 
-  &-1{
-    @include project-card($color-orange-light, $color-orange-dark, $first-card-picture, $first-card-title, $first-card-details);
+  &-1 {
+    @include project-card(
+      $color-orange-light,
+      $color-orange-dark,
+      $first-card-picture,
+      $first-card-title,
+      $first-card-details
+    );
   }
 
-  &-2{
-    @include project-card($color-purple-light, $color-purple-dark, $second-card-picture, $second-card-title, $second-card-details);
+  &-2 {
+    @include project-card(
+      $color-purple-light,
+      $color-purple-dark,
+      $second-card-picture,
+      $second-card-title,
+      $second-card-details
+    );
   }
 
-  &-3{
-    @include project-card($color-secondary, $color-primary, $third-card-picture, $third-card-title, $third-card-details);
+  &-3 {
+    @include project-card(
+      $color-secondary,
+      $color-primary,
+      $third-card-picture,
+      $third-card-title,
+      $third-card-details
+    );
   }
 }
 
@@ -242,7 +261,7 @@ add ".disabled" next to ".card" to disable project card
       content: "Coming Up!";
     }
 
-    & .card__project-title{
+    & .card__project-title {
       display: none;
     }
   }
