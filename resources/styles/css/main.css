@@ -218,18 +218,6 @@ body {
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
 }
 
-.btn--project-card-1:hover {
-  color: #ffb900;
-}
-
-.btn--project-card-2:hover {
-  color: #d35ae6;
-}
-
-.btn--project-card-3:hover {
-  color: #3dadff;
-}
-
 .slide-card {
   height: 40rem;
 }
@@ -256,6 +244,11 @@ body {
   -webkit-transform: translateY(-10rem);
           transform: translateY(-10rem);
   background-color: #fff;
+}
+
+.slide-card:hover .slide-card__face--header, .slide-card:hover .slide-card__face--content {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .slide-card__center-box {
@@ -285,6 +278,12 @@ body {
   color: #3dadff;
 }
 
+.slide-card:hover .slide-card__icon,
+.slide-card:hover .slide-card__header {
+  fill: #fff;
+  color: #fff;
+}
+
 .slide-card__link {
   display: inline-block;
   margin-top: 0.5rem;
@@ -312,21 +311,8 @@ body {
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.6);
 }
 
-.slide-card--1:hover .slide-card__icon,
-.slide-card--1:hover .slide-card__header {
-  fill: #fff;
-  color: #fff;
-}
-
 .slide-card--1:hover .slide-card__face--header {
   background-color: #4f1566;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.slide-card--1:hover .slide-card__face--content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .slide-card--1 .slide-card__link:visited, .slide-card--1 .slide-card__link:link {
@@ -338,21 +324,8 @@ body {
   background-color: #4f1566;
 }
 
-.slide-card--2:hover .slide-card__icon,
-.slide-card--2:hover .slide-card__header {
-  fill: #fff;
-  color: #fff;
-}
-
 .slide-card--2:hover .slide-card__face--header {
   background-color: #ff7730;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.slide-card--2:hover .slide-card__face--content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .slide-card--2 .slide-card__link:visited, .slide-card--2 .slide-card__link:link {
@@ -364,21 +337,8 @@ body {
   background-color: #ff7730;
 }
 
-.slide-card--3:hover .slide-card__icon,
-.slide-card--3:hover .slide-card__header {
-  fill: #fff;
-  color: #fff;
-}
-
 .slide-card--3:hover .slide-card__face--header {
   background-color: #000e44;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.slide-card--3:hover .slide-card__face--content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .slide-card--3 .slide-card__link:visited, .slide-card--3 .slide-card__link:link {
@@ -422,21 +382,6 @@ body {
           transform: rotateY(180deg);
 }
 
-.card__side--back-1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff7730), to(#ffb900));
-  background-image: linear-gradient(to right bottom, #ff7730, #ffb900);
-}
-
-.card__side--back-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#4f1566), to(#d35ae6));
-  background-image: linear-gradient(to right bottom, #4f1566, #d35ae6);
-}
-
-.card__side--back-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#000e44), to(#3dadff));
-  background-image: linear-gradient(to right bottom, #000e44, #3dadff);
-}
-
 .card:hover .card__side--front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
@@ -458,18 +403,6 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-.card__picture-1 {
-  background-image: url(../../images/Race-2x.png);
-}
-
-.card__picture-2 {
-  background-image: url(../../images/Percentage-Calculator-2x.png);
-}
-
-.card__picture-3 {
-  background-image: url(../../images/in-development-2x.png);
-}
-
 .card__header {
   width: 75%;
   position: absolute;
@@ -488,49 +421,10 @@ body {
   box-decoration-break: clone;
 }
 
-.card__header-span-1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
-}
-
-.card__header-span-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(211, 90, 230, 0.85)), to(rgba(79, 21, 102, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(211, 90, 230, 0.85), rgba(79, 21, 102, 0.85));
-}
-
-.card__header-span-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 173, 255, 0.85)), to(rgba(0, 14, 68, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(61, 173, 255, 0.85), rgba(0, 14, 68, 0.85));
-}
-
-.card__project-title-1::after {
-  content: "Race";
-}
-
-.card__project-title-2::after {
-  content: "Percentage Calculator V.2";
-}
-
-.card__project-title-3::after {
-  content: "Liquidizer";
-}
-
 .card__details {
   text-align: center;
   width: 80%;
   margin: 5.5rem auto;
-}
-
-.card__details-1::after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
-}
-
-.card__details-2::after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
-}
-
-.card__details-3::after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet\a consectetur adipisicing elit.Aperiam, ipsum sapiente\a aspernatur.";
 }
 
 .card__center-box {
@@ -549,26 +443,67 @@ body {
   margin: 0 auto;
 }
 
-.card__side--back-4 {
+.card-1 .card__side--back, .card-1 .card__header-span {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+
+.card-1 .card__picture {
+  background-image: url(../../images/Race-2x.png);
+}
+
+.card-1 .card__project-title::after {
+  content: "Race";
+}
+
+.card-1 .card__details::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
+}
+
+.card-1 .btn:hover {
+  color: #ffb900;
+}
+
+.card-2 .card__side--back, .card-2 .card__header-span {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(211, 90, 230, 0.85)), to(rgba(79, 21, 102, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(211, 90, 230, 0.85), rgba(79, 21, 102, 0.85));
+}
+
+.card-2 .card__picture {
+  background-image: url(../../images/Percentage-Calculator-2x.png);
+}
+
+.card-2 .card__project-title::after {
+  content: "Percentage Calculator V.2";
+}
+
+.card-2 .card__details::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
+}
+
+.card-2 .btn:hover {
+  color: #d35ae6;
+}
+
+.card-3 .card__side--back, .card-3 .card__header-span {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 173, 255, 0.85)), to(rgba(0, 14, 68, 0.85)));
   background-image: linear-gradient(to right bottom, rgba(61, 173, 255, 0.85), rgba(0, 14, 68, 0.85));
 }
 
-.card__picture-4 {
+.card-3 .card__picture {
   background-image: url(../../images/in-development-2x.png);
 }
 
-.card__header-span-4 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 173, 255, 0.85)), to(rgba(0, 14, 68, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(61, 173, 255, 0.85), rgba(0, 14, 68, 0.85));
-}
-
-.card__project-title-4::after {
+.card-3 .card__project-title::after {
   content: "Liquidizer";
 }
 
-.card__details-4::after {
+.card-3 .card__details::after {
   content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet\a consectetur adipisicing elit.Aperiam, ipsum sapiente\a aspernatur.";
+}
+
+.card-3 .btn:hover {
+  color: #3dadff;
 }
 
 /*

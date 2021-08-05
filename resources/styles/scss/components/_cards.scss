@@ -23,6 +23,12 @@
     }
   }
 
+  &:hover &__face{
+    &--header, &--content{
+      transform: translate(0);
+    }
+  }
+
   &__center-box {
     display: inline-block;
     width: 100%;
@@ -46,6 +52,12 @@
   &__header {
     fill: $color-secondary;
     color: $color-secondary;
+  }
+
+  &:hover &__icon,
+  &:hover &__header {
+    fill: $color-white;
+    color: $color-white;
   }
 
   &__link {
@@ -72,91 +84,16 @@
     }
   }
 
-  //first card styles
-  &--1:hover &__icon,
-  &--1:hover &__header {
-    fill: $color-white;
-    color: $color-white;
+  &--1{
+    @include slide-card-style($color-purple-dark);
   }
 
-  &--1:hover &__face {
-    &--header {
-      background-color: $color-purple-dark;
-      transform: translateY(0);
-    }
-    &--content {
-      transform: translateY(0);
-    }
+  &--2{
+    @include slide-card-style($color-orange-dark);
   }
 
-  &--1 &__link {
-    &:visited,
-    &:link {
-      color: $color-purple-dark;
-      border-bottom: 1px solid $color-purple-dark;
-    }
-
-    &:hover {
-      background-color: $color-purple-dark;
-    }
-  }
-
-  //second card styles
-  &--2:hover &__icon,
-  &--2:hover &__header {
-    fill: $color-white;
-    color: $color-white;
-  }
-
-  &--2:hover &__face {
-    &--header {
-      background-color: $color-orange-dark;
-      transform: translateY(0);
-    }
-    &--content {
-      transform: translateY(0);
-    }
-  }
-
-  &--2 &__link {
-    &:visited,
-    &:link {
-      color: $color-orange-dark;
-      border-bottom: 1px solid $color-orange-dark;
-    }
-
-    &:hover {
-      background-color: $color-orange-dark;
-    }
-  }
-
-  //third card styles
-  &--3:hover &__icon,
-  &--3:hover &__header {
-    fill: $color-white;
-    color: $color-white;
-  }
-
-  &--3:hover &__face {
-    &--header {
-      background-color: $color-primary;
-      transform: translateY(0);
-    }
-    &--content {
-      transform: translateY(0);
-    }
-  }
-
-  &--3 &__link {
-    &:visited,
-    &:link {
-      color: $color-primary;
-      border-bottom: 1px solid $color-primary;
-    }
-
-    &:hover {
-      background-color: $color-primary;
-    }
+  &--3{
+    @include slide-card-style($color-primary);
   }
 }
 
@@ -186,30 +123,6 @@
 
     &--back {
       transform: rotateY(180deg);
-
-      &-1 {
-        background-image: linear-gradient(
-          to right bottom,
-          $first-card-color-dark,
-          $first-card-color-light
-        );
-      }
-
-      &-2 {
-        background-image: linear-gradient(
-          to right bottom,
-          $second-card-color-dark,
-          $second-card-color-light
-        );
-      }
-
-      &-3 {
-        background-image: linear-gradient(
-          to right bottom,
-          $third-card-color-dark,
-          $third-card-color-light
-        );
-      }
     }
   }
 
@@ -231,18 +144,6 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
-    &-1 {
-      background-image: $first-card-picture;
-    }
-
-    &-2 {
-      background-image: $second-card-picture;
-    }
-
-    &-3 {
-      background-image: $third-card-picture;
-    }
   }
 
   &__header {
@@ -261,62 +162,12 @@
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-
-    &-1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($first-card-color-light, 0.85),
-        rgba($first-card-color-dark, 0.85)
-      );
-    }
-
-    &-2 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($second-card-color-light, 0.85),
-        rgba($second-card-color-dark, 0.85)
-      );
-    }
-
-    &-3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($third-card-color-light, 0.85),
-        rgba($third-card-color-dark, 0.85)
-      );
-    }
-  }
-
-  &__project-title{
-    &-1::after{
-      content: $first-card-title;
-    }
-
-    &-2::after{
-      content: $second-card-title;
-    }
-
-    &-3::after{
-      content: $third-card-title;
-    }
   }
 
   &__details {
     text-align: center;
     width: 80%;
     margin: 5.5rem auto;
-
-    &-1::after{
-      content: $first-card-details;
-    }
-
-    &-2::after{
-      content: $second-card-details;
-    }
-
-    &-3::after{
-      content: $third-card-details;
-    }
   }
 
   //Back side
@@ -332,46 +183,17 @@
     display: block;
     margin: 0 auto;
   }
-}
 
-//more project cards
-.card{
-  &__side--back{
-    &-4{
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($third-card-color-light, 0.85),
-        rgba($third-card-color-dark, 0.85)
-      );
-    }
+  &-1{
+    @include project-card($color-orange-light, $color-orange-dark, $first-card-picture, $first-card-title, $first-card-details);
   }
 
-  &__picture{
-    &-4{
-      background-image: $third-card-picture;
-    }
+  &-2{
+    @include project-card($color-purple-light, $color-purple-dark, $second-card-picture, $second-card-title, $second-card-details);
   }
 
-  &__header-span{
-    &-4{
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($third-card-color-light, 0.85),
-        rgba($third-card-color-dark, 0.85)
-      );
-    }
-  }
-
-  &__project-title{
-    &-4::after{
-      content: $third-card-title;
-    }
-  }
-
-  &__details{
-    &-4::after{
-      content: $third-card-details;
-    }
+  &-3{
+    @include project-card($color-secondary, $color-primary, $third-card-picture, $third-card-title, $third-card-details);
   }
 }
 

@@ -71,17 +71,5 @@
       transform: $btn-active-translate;
       box-shadow: $shadow-medium $shadow-opacity-high;
     }
-
-    &-1:hover {
-      color: $first-card-color-light;
-    }
-
-    &-2:hover {
-      color: $second-card-color-light;
-    }
-
-    &-3:hover {
-      color: $third-card-color-light;
-    }
   }
 }

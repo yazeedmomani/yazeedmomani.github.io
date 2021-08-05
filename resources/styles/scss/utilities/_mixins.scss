@@ -12,3 +12,49 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin slide-card-style($color) {
+  &:hover .slide-card__face--header {
+    background-color: $color;
+  }
+
+  & .slide-card__link {
+    &:visited,
+    &:link {
+      color: $color;
+      border-bottom: 1px solid $color;
+    }
+
+    &:hover {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin project-card($lightcolor, $darkcolor, $picture, $title, $details) {
+  .card {
+    &__side--back,
+    &__header-span {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($lightcolor, 0.85),
+        rgba($darkcolor, 0.85)
+      );
+    }
+
+    &__picture {
+      background-image: $picture;
+    }
+
+    &__project-title::after {
+      content: $title;
+    }
+
+    &__details::after {
+      content: $details;
+    }
+  }
+  & .btn:hover {
+    color: $lightcolor;
+  }
+}
