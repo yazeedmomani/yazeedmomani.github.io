@@ -84,17 +84,4 @@
       color: $third-card-color-light;
     }
   }
-  //TODO create disable class
-  &--disabled {
-    &:visited,
-    &:link,
-    &:hover,
-    &:active {
-      transform: translateY(0) !important;
-      background-color: transparent !important;
-      box-shadow: 0 0 0 !important;
-      color: $color-white !important;
-      cursor: default !important;
-    }
-  }
 }

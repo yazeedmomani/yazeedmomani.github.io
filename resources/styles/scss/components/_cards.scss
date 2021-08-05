@@ -306,9 +306,57 @@
     display: block;
     margin: 0 auto;
   }
-  //TODO create disable class
-  &--disabled &__side--front,
-  &--disabled &__side--back {
+}
+
+/*
+add ".disabled" next to ".card" to disable project card
+.disabled--development adds in development image
+.disabled--upcoming adds empty image and changes header to "Coming Up!"
+*/
+.disabled {
+  & .btn {
+    &:visited,
+    &:link,
+    &:hover,
+    &:active {
+      transform: translateY(0);
+      background-color: transparent;
+      box-shadow: 0 0 0;
+      color: $color-white;
+      cursor: default;
+    }
+  }
+
+  & .card__side--front,
+  & .card__side--back {
     opacity: 0.8;
+  }
+
+  & .card__side--back {
+    background-image: $disabled-back-side;
+  }
+
+  & .card__header-span {
+    background-image: $disabled-header-span;
+  }
+
+  &--development .card__picture {
+    background-image: $image-in-development;
+  }
+
+  &--upcoming {
+    & .card__picture {
+      background-image: $image-coming-up;
+    }
+
+    & .card__header-span {
+      &::after {
+        content: "Coming Up!";
+      }
+
+      &--disabled-text {
+        display: none;
+      }
+    }
   }
 }

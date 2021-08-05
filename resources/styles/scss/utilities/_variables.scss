@@ -66,10 +66,20 @@ $header-letter-spacing: 12px;
 $project-card-border-radius: 3rem;
 $project-card-height: 50rem;
 
-$color-locked-dark: #777;
-$color-locked-light: #aaa;
+$color-disabled-dark: #777;
+$color-disabled-light: #aaa;
 $image-in-development: url(../../images/in-development-2x.png);
 $image-coming-up: url(../../images/coming-up-2x.png);
+$disabled-header-span: linear-gradient(
+  to right bottom,
+  rgba($color-disabled-light, 0.85),
+  rgba($color-disabled-dark, 0.85)
+);
+$disabled-back-side: linear-gradient(
+  to right bottom,
+  $color-disabled-dark,
+  $color-disabled-light
+);
 
 $first-card-color-dark: $color-orange-dark;
 $first-card-color-light: $color-orange-light;
@@ -79,8 +89,8 @@ $second-card-color-dark: #4f1566;
 $second-card-color-light: #d35ae6;
 $second-card-picture: url(../../images/Percentage-Calculator-2x.png);
 
-$third-card-color-dark: $color-locked-dark;
-$third-card-color-light: $color-locked-light;
+$third-card-color-dark: $color-primary;
+$third-card-color-light: $color-secondary;
 $third-card-picture: $image-in-development;
 
 //grid

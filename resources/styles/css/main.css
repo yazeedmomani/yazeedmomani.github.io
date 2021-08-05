@@ -227,17 +227,7 @@ body {
 }
 
 .btn--project-card-3:hover {
-  color: #aaa;
-}
-
-.btn--disabled:visited, .btn--disabled:link, .btn--disabled:hover, .btn--disabled:active {
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
-  background-color: transparent !important;
-  -webkit-box-shadow: 0 0 0 !important;
-          box-shadow: 0 0 0 !important;
-  color: #fff !important;
-  cursor: default !important;
+  color: #3dadff;
 }
 
 .slide-card {
@@ -443,8 +433,8 @@ body {
 }
 
 .card__side--back-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#777), to(#aaa));
-  background-image: linear-gradient(to right bottom, #777, #aaa);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#000e44), to(#3dadff));
+  background-image: linear-gradient(to right bottom, #000e44, #3dadff);
 }
 
 .card:hover .card__side--front {
@@ -509,8 +499,8 @@ body {
 }
 
 .card__header-span-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(170, 170, 170, 0.85)), to(rgba(119, 119, 119, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(170, 170, 170, 0.85), rgba(119, 119, 119, 0.85));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 173, 255, 0.85)), to(rgba(0, 14, 68, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(61, 173, 255, 0.85), rgba(0, 14, 68, 0.85));
 }
 
 .card__details {
@@ -535,9 +525,50 @@ body {
   margin: 0 auto;
 }
 
-.card--disabled .card__side--front,
-.card--disabled .card__side--back {
+/*
+add ".disabled" next to ".card" to disable project card
+.disabled--development adds in development image
+.disabled--upcoming adds empty image and changes header to "Coming Up!"
+*/
+.disabled .btn:visited, .disabled .btn:link, .disabled .btn:hover, .disabled .btn:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+  color: #fff;
+  cursor: default;
+}
+
+.disabled .card__side--front,
+.disabled .card__side--back {
   opacity: 0.8;
+}
+
+.disabled .card__side--back {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#777), to(#aaa));
+  background-image: linear-gradient(to right bottom, #777, #aaa);
+}
+
+.disabled .card__header-span {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(170, 170, 170, 0.85)), to(rgba(119, 119, 119, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(170, 170, 170, 0.85), rgba(119, 119, 119, 0.85));
+}
+
+.disabled--development .card__picture {
+  background-image: url(../../images/in-development-2x.png);
+}
+
+.disabled--upcoming .card__picture {
+  background-image: url(../../images/coming-up-2x.png);
+}
+
+.disabled--upcoming .card__header-span::after {
+  content: "Coming Up!";
+}
+
+.disabled--upcoming .card__header-span--disabled-text {
+  display: none;
 }
 
 .icon-link {
