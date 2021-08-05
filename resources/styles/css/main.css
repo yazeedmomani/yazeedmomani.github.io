@@ -1,21 +1,21 @@
-.margin-right {
-  margin-right: 10rem;
+.margin-right-medium {
+  margin-right: 2.4rem;
 }
 
-.margin-right-small {
-  margin-right: 2.5rem;
-}
-
-.margin-top-bigger {
-  margin-top: 10rem;
-}
-
-.margin-top-big {
-  margin-top: 8rem;
+.margin-top-small {
+  margin-top: 1.2rem;
 }
 
 .margin-top-medium {
-  margin-top: 5rem;
+  margin-top: 2.4rem;
+}
+
+.margin-top-large {
+  margin-top: 4.8rem;
+}
+
+.margin-top-xlarge {
+  margin-top: 7.2rem;
 }
 
 .margin-bottom-small {
@@ -26,12 +26,20 @@
   margin-bottom: 2.4rem;
 }
 
-.margin-bottom-big {
+.margin-bottom-large {
   margin-bottom: 4.8rem;
 }
 
-.margin-bottom-bigger {
-  margin-bottom: 8rem;
+.margin-bottom-xlarge {
+  margin-bottom: 7.2rem;
+}
+
+.margin-right-grid {
+  margin-right: 6rem;
+}
+
+.margin-top-grid {
+  margin-top: 10rem;
 }
 
 .margin-bottom-grid {
@@ -617,7 +625,7 @@ body {
 
 .header__btn-container {
   display: inline-block;
-  margin-left: 260px;
+  margin-left: 27rem;
 }
 
 .about-me {

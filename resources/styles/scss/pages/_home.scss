@@ -37,7 +37,7 @@
 
   &__btn-container {
     display: inline-block;
-    margin-left: 260px;
+    margin-left: 27rem;
   }
 }
 
@@ -70,7 +70,7 @@
 
   &__image {
     height: inherit;
-    width: calc((100% - #{$gutter-horizontal}) / 2);
+    width: $grid-col-1-of-2-width;
     position: absolute;
     top: 0;
     right: 0;
