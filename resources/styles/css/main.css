@@ -408,7 +408,7 @@ body {
 }
 
 .card__side {
-  height: inherit;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -636,11 +636,11 @@ body {
 }
 
 .about-me__container {
-  height: inherit;
+  height: 100%;
 }
 
 .about-me__content {
-  height: inherit;
+  height: 100%;
 }
 
 .about-me__header {
@@ -657,7 +657,7 @@ body {
 }
 
 .about-me__image {
-  height: inherit;
+  height: 100%;
   width: calc((100% - 6rem) / 2);
   position: absolute;
   top: 0;

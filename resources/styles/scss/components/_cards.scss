@@ -26,10 +26,8 @@
   &__center-box {
     display: inline-block;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    @include center;
   }
 
   &__icon {
@@ -171,7 +169,7 @@
   perspective: 150rem;
 
   &__side {
-    height: inherit;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -298,10 +296,8 @@
   //Back side
   &__center-box {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    @include center;
   }
 
   &__btn-container {
