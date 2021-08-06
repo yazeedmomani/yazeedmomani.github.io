@@ -1,8 +1,6 @@
 //TODO fix &__icon
 .logo-full {
-  &__icon {
-    transform: translate(421px, 366.5px) rotate(180deg);
-  }
+  width: $logo-size-big;
 
   &__text {
     font-family: Lato-Bold, Lato;
@@ -21,16 +19,7 @@
     font-size: 80px;
   }
 
-  //TODO change &--color to &__color
-  &--color {
+  &__color {
     fill: $color-secondary;
-  }
-
-  &--big {
-    width: $logo-size-big;
-  }
-
-  &--small {
-    width: $logo-size-small;
   }
 }

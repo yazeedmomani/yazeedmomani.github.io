@@ -95,9 +95,8 @@ body {
   text-align: center;
 }
 
-.logo-full__icon {
-  -webkit-transform: translate(421px, 366.5px) rotate(180deg);
-          transform: translate(421px, 366.5px) rotate(180deg);
+.logo-full {
+  width: 16.3rem;
 }
 
 .logo-full__text {
@@ -117,16 +116,8 @@ body {
   font-size: 80px;
 }
 
-.logo-full--color {
+.logo-full__color {
   fill: #3dadff;
-}
-
-.logo-full--big {
-  width: 16.3rem;
-}
-
-.logo-full--small {
-  width: 13rem;
 }
 
 .btn:link, .btn:visited {
@@ -708,7 +699,7 @@ add ".disabled" next to ".card" to disable project card
   float: right;
 }
 
-.nav__item:first-child:hover .logo-full--color {
+.nav__item:first-child:hover .logo-full__color {
   fill: #113c7b;
 }
 
