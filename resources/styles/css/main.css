@@ -403,7 +403,7 @@ body {
 .card__details {
   text-align: center;
   width: 80%;
-  margin: 5.5rem auto;
+  margin: 8rem auto;
 }
 
 .card__center-box {
@@ -436,7 +436,7 @@ body {
 }
 
 .card--DB-1 .card__details::after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
+  content: "This is my very first website. It looks terrible. I've added it amongst my projects so you can check it out. No judgements please.";
 }
 
 .card--DB-1 .btn:hover {
@@ -457,7 +457,7 @@ body {
 }
 
 .card--DB-2 .card__details::after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet\a consectetur adipisicing elit. Aperiam, ipsum sapiente\a aspernatur.";
+  content: "This is my second best website. I don't expect you to understand how to use it. It wasn't meant for others to use.";
 }
 
 .card--DB-2 .btn:hover {
@@ -478,7 +478,7 @@ body {
 }
 
 .card--DB-3 .card__details::after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.\a Aperiam, ipsum sapiente aspernatur.Lorem ipsum dolor sit amet\a consectetur adipisicing elit.Aperiam, ipsum sapiente\a aspernatur.";
+  content: "I will try to make this website the best way I can. It's gonna take a while though.";
 }
 
 .card--DB-3 .btn:hover {
