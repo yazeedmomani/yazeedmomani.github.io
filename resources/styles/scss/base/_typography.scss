@@ -23,7 +23,7 @@ body {
 
 .paragraph {
   &--grid-width {
-    width: $grid-width;
+    max-width: $grid-width;
     margin-left: auto;
     margin-right: auto;
   }
