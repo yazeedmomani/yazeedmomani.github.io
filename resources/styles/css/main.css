@@ -82,7 +82,7 @@ body {
 }
 
 .paragraph--grid-width {
-  max-width: 114rem;
+  width: 114rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -650,7 +650,7 @@ add ".disabled" next to ".card" to disable project card
 }
 
 .row {
-  max-width: 114rem;
+  width: 114rem;
   margin: 0 auto;
 }
 
@@ -741,6 +741,7 @@ add ".disabled" next to ".card" to disable project card
 }
 
 .footer__bottom-box {
+  width: 100%;
   position: absolute;
   bottom: 0;
 }

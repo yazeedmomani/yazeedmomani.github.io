@@ -1,6 +1,6 @@
 //A centered 1140px wide box
 .row {
-  max-width: $grid-width;
+  width: $grid-width;
   margin: 0 auto;
 
   @include clearfix;
