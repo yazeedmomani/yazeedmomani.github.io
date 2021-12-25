@@ -476,6 +476,27 @@ body {
   color: #3dadff;
 }
 
+.card--B-1 .card__side--back, .card--B-1 .card__header-span {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(34, 34, 34, 0.85)), to(rgba(34, 34, 34, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.85));
+}
+
+.card--B-1 .card__picture {
+  background-image: url(../../images/Guess-My-Number.png);
+}
+
+.card--B-1 .card__project-title::after {
+  content: "Guess My Number";
+}
+
+.card--B-1 .card__details::after {
+  content: "You have 7 tries to guess a random number. This project does not work on mobile phones.";
+}
+
+.card--B-1 .btn:hover {
+  color: #222;
+}
+
 /*
 add ".disabled" next to ".card" to disable project card
 .disabled--development adds in development image
