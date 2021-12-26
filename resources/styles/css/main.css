@@ -507,7 +507,7 @@ body {
 }
 
 .card--B-2 .card__project-title::after {
-  content: "Guess My Number";
+  content: "Pig Game";
 }
 
 .card--B-2 .card__details::after {
