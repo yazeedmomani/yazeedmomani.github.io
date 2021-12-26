@@ -220,11 +220,11 @@
   &--B {
     &-1 {
       @include project-card(
-        $fourth-b-card-color-light,
-        $fourth-b-card-color-dark,
-        $fourth-b-card-picture,
-        $fourth-b-card-title,
-        $fourth-b-card-details
+        $first-b-card-color-light,
+        $first-b-card-color-dark,
+        $first-b-card-picture,
+        $first-b-card-title,
+        $first-b-card-details
       );
     }
 
