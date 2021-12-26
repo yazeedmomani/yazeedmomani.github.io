@@ -227,6 +227,16 @@
         $fourth-b-card-details
       );
     }
+
+    &-2 {
+      @include project-card(
+        $second-b-card-color-light,
+        $second-b-card-color-dark,
+        $second-b-card-picture,
+        $second-b-card-title,
+        $second-b-card-details
+      );
+    }
   }
 }
 

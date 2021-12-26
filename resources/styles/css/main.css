@@ -497,6 +497,27 @@ body {
   color: #222;
 }
 
+.card--B-2 .card__side--back, .card--B-2 .card__header-span {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(191, 46, 52, 0.85)), to(rgba(117, 54, 130, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(191, 46, 52, 0.85), rgba(117, 54, 130, 0.85));
+}
+
+.card--B-2 .card__picture {
+  background-image: url(../../images/Pig-Game.png);
+}
+
+.card--B-2 .card__project-title::after {
+  content: "Guess My Number";
+}
+
+.card--B-2 .card__details::after {
+  content: "Roll the dice. The number you get will be added to your current score. If you get 1, the game will switch players and your current score will reset to 0. You can choose to hold the score. The first player to reach score 100 wins.";
+}
+
+.card--B-2 .btn:hover {
+  color: #bf2e34;
+}
+
 /*
 add ".disabled" next to ".card" to disable project card
 .disabled--development adds in development image
