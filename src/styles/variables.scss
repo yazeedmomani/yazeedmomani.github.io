@@ -1,0 +1,41 @@
+:root {
+  /* Grey Scale */
+  --color-white: #fff;
+  --color-black: #333;
+
+  /* Feedback */
+  --color-success: #2e7d32;
+  --color-error: #d32f2f;
+  --color-warning: #ed6c02;
+  --color-disabled: rgba(0, 0, 0, 0.38);
+
+  /* Backdrop */
+  --color-backdrop: rgba(0, 0, 0, 0.9);
+
+  /* Font Families */
+  --font-family-en-serif: "Lora", serif;
+  --font-family-en-sans-serif: "Roboto", sans-serif;
+  --font-family-ar-serif: "Markazi Text", serif;
+  --font-family-ar-sans-serif: "Cairo", sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Font Sizes */
+  --font-size-h0: 9.6rem;
+  --font-size-h1: 7.2rem;
+  --font-size-h2: 4.8rem;
+  --font-size-h3: 3.2rem;
+  --font-size-h4: 2.4rem;
+  --font-size-h5: 1.8rem;
+  --font-size-p: 1.6rem;
+
+  /* Border Radius */
+  --border-radius: 1.5rem;
+
+  /* Shadows */
+  --box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.08);
+  --box-shadow-hover: 0 1.5rem 3rem rgba(0, 0, 0, 0.08);
+  --box-shadow-active: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.08);
+}
