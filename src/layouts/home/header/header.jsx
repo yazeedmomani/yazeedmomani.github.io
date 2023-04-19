@@ -10,8 +10,17 @@ export default function Header() {
       </h1>
       <span>Designing Tomorrow's Web, One Pixel at a Time</span>
       <div>
-        <Button primary>Hire me</Button>
-        <Button>Download resume</Button>
+        <Button
+          primary
+          href="https://www.upwork.com/freelancers/~01428ceffca847ca7a"
+          target="_blank">
+          Hire me
+        </Button>
+        <Button
+          download
+          href="../../../pdf/resume_yazeed-al-momani.pdf">
+          Download resume
+        </Button>
       </div>
     </header>
   );
