@@ -47,40 +47,48 @@
     color: #f2f2f2;
   }
 
-  &:last-of-type{
+  &:last-of-type {
     margin-bottom: 3.6rem !important;
   }
 }
 
-.pagesTitle{
-    color: #fff;
-    font-size: 1.8rem;
-    font-family: "roboto";
-    margin-bottom: 1.2rem;
+.pagesTitle {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "roboto";
+  margin-bottom: 1.2rem;
 }
 
-.pagesUl{
-    margin-left: 2.4rem;
-    
-    &>li{
-        margin-bottom: 1.2rem;
-        
-        &>a{
-            transition: all 500ms;
-            
-            &:visited, &:link{
-                color: #fff;
-                font-size: 1.6rem;
-                font-family: "roboto";
-            }
+.pagesUl {
+  margin-left: 2.4rem;
 
-            &:hover, &:link{
-                color: #f2f2f2;
-            }
-        }
+  & > li {
+    margin-bottom: 1.2rem;
 
-        &:last-child{
-            margin-bottom: 3.6rem;
-        }
+    & > a {
+      transition: all 500ms;
+
+      &:visited,
+      &:link {
+        color: #fff;
+        font-size: 1.6rem;
+        font-family: "roboto";
+      }
+
+      &:hover,
+      &:link {
+        color: #f2f2f2;
+      }
     }
+
+    &:last-child {
+      margin-bottom: 3.6rem;
+    }
+  }
+}
+
+.copyright {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "roboto";
 }
