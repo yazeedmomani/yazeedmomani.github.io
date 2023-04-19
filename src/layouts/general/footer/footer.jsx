@@ -1,9 +1,12 @@
 import styles from "./footer.module.scss";
-import Logo from "../../components/logo";
+import Logo from "../../../components/logo";
 import { Link } from "react-router-dom";
 
 const SocialIcon = ({ platform, href }) => (
-  <a href={href} className={styles.link} target="_blank">
+  <a
+    href={href}
+    className={styles.link}
+    target="_blank">
     <i className={`bx bxl-${platform} ${styles.icon}`} />
   </a>
 );
@@ -12,7 +15,10 @@ const socialIconsData = [
   { platform: "twitter", href: "https://twitter.com/yaz_momani" },
   { platform: "linkedin", href: "https://www.linkedin.com/in/yazeedalmomani" },
   { platform: "github", href: "https://github.com/yazeedmomani" },
-  { platform: "upwork", href: "https://www.upwork.com/freelancers/~01428ceffca847ca7a" },
+  {
+    platform: "upwork",
+    href: "https://www.upwork.com/freelancers/~01428ceffca847ca7a",
+  },
 ];
 
 const contactData = {
@@ -33,23 +39,36 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       {/* Logo */}
-      <Link to="/" onClick={handleClickLogo}>
-        <Logo dark className={styles.logo} />
+      <Link
+        to="/"
+        onClick={handleClickLogo}>
+        <Logo
+          dark
+          className={styles.logo}
+        />
       </Link>
 
       {/* Social media icons */}
       <div className={styles.iconContainer}>
         {socialIconsData.map((socialIcon) => (
-          <SocialIcon key={socialIcon.platform} platform={socialIcon.platform} href={socialIcon.href} />
+          <SocialIcon
+            key={socialIcon.platform}
+            platform={socialIcon.platform}
+            href={socialIcon.href}
+          />
         ))}
       </div>
 
       {/* Contact information */}
       <div className={styles.contactContainer}>
-        <a href={`tel:${contactData.phone}`} className={styles.contact}>
+        <a
+          href={`tel:${contactData.phone}`}
+          className={styles.contact}>
           {contactData.phone}
         </a>
-        <a href={`mailto:${contactData.email}`} className={styles.contact}>
+        <a
+          href={`mailto:${contactData.email}`}
+          className={styles.contact}>
           {contactData.email}
         </a>
       </div>

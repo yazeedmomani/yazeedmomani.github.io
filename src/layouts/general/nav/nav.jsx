@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Logo from "../../components/logo/";
-import Menu from "../menu/";
+import Logo from "../../../components/logo";
+import Menu from "../menu";
 import styles from "./nav.module.scss";
 import { Link } from "react-router-dom";
 
