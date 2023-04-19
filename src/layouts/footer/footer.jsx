@@ -1,5 +1,6 @@
 import styles from "./footer.module.scss";
 import Logo from "../../components/logo";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const twitterClass = `bx bxl-twitter ${styles.icon}`;
@@ -9,10 +10,12 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <Logo
-        dark
-        className={styles.logo}
-      />
+      <Link to="/">
+        <Logo
+          dark
+          className={styles.logo}
+        />
+      </Link>
       <div className={styles.iconContainer}>
         <a
           href="https://twitter.com/yaz_momani"
