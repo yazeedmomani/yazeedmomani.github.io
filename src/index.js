@@ -7,6 +7,7 @@ import "./styles/reset.scss";
 import "./styles/typography.scss";
 import "./styles/variables.scss";
 
+// TODO Add 404 page
 const router = createBrowserRouter([
   {
     path: "/",

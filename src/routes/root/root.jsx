@@ -1,3 +1,13 @@
+import { Outlet } from "react-router-dom";
+import Nav from "../../layouts/nav";
+
 export default function Root() {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <Nav />
+      <main>
+        <Outlet />
+      </main>
+    </>
+  );
 }
