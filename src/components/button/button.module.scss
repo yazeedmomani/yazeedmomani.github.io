@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 1.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  font-family: "roboto";
+  background-color: #fff;
+  color: #d68100;
+  transition: all 300ms;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow-hover);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: var(--box-shadow-active);
+  }
+
+  &.primary {
+    background-color: #d68100;
+    color: #fff;
+  }
+}
