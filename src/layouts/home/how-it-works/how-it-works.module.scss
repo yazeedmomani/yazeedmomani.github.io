@@ -1,5 +1,38 @@
+.howItWorks {
+  margin-bottom: 14.4rem;
+}
+
 .sectionHeader {
   & + h2 {
     margin-bottom: 7.2rem;
+  }
+}
+
+.step {
+  font-size: 9.6rem;
+  font-weight: var(--font-weight-bold);
+  color: #ddd;
+
+  &,
+  & + h3 {
+    margin-bottom: 1.2rem;
+  }
+
+  &,
+  & + h3 + p {
+    font-family: "roboto";
+  }
+
+  & + h3 {
+    font-family: "Comic Sans";
+    font-size: 2.4rem;
+  }
+
+  & + h3 + p {
+    font-size: 1.6rem;
+  }
+
+  &.withMargin + h3 + p {
+    margin-bottom: 4.8rem;
   }
 }
