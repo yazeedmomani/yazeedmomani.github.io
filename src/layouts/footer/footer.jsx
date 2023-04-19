@@ -38,6 +38,16 @@ export default function Footer() {
           <i class={upworkClass}></i>
         </a>
       </div>
+      <a
+        href="tel:+962798697131"
+        className={styles.contact}>
+        +962798697131
+      </a>
+      <a
+        href="mailto:yazeed.02.momani@outlook.com"
+        className={styles.contact}>
+        yazeed.02.momani@outlook.com
+      </a>
     </footer>
   );
 }
