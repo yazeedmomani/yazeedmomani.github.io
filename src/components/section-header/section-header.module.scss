@@ -6,11 +6,19 @@
   &,
   & + h2 {
     font-family: "Comic Sans";
-    display: inline-block;
+    display: block;
   }
 
   & + h2 {
     font-size: 3.2rem;
     line-height: 1.2;
+  }
+
+  &.dark {
+    color: #f2f2f2;
+
+    & + h2 {
+      color: #fff;
+    }
   }
 }

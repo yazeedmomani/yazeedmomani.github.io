@@ -48,9 +48,9 @@ export default function HowItWorks() {
     <section className={styles.howItWorks}>
       <SectionHeader
         sectionName="How It Works"
-        className={styles.sectionHeader}>
-        craft your website in 4 simple steps
-      </SectionHeader>
+        className={styles.sectionHeader}
+        sectionTitle="craft your website in 4 simple steps"
+      />
       {STEPS.map(({ NUMBER, TITLE, PARAGRAPH }, index) => (
         <Step
           key={NUMBER}

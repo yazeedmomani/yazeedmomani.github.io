@@ -19,7 +19,7 @@ export default function Menu({ setShowMenu }) {
       className={styles.backdrop}
       onClick={handleCloseClick}>
       <div className={styles.iconContainer}>
-        <i class={`bx bx-x ${styles.icon}`}></i>
+        <i className={`bx bx-x ${styles.icon}`}></i>
       </div>
       <ul className={styles.linkContainer}>
         <li className={styles.link}>
