@@ -57,7 +57,7 @@ export default function Footer() {
           <Link to="/projects">Projects</Link>
         </li>
       </ul>
-      <p className={styles.copyright}>&copy; 2023 Yazeed al-Momani | All Rights Reserved</p>
+      <p className={styles.copyright}>&copy; 2023 Yazeed al-Momani</p>
     </footer>
   );
 }
