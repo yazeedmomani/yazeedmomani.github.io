@@ -1,94 +1,94 @@
 .footer {
   padding: 7.2rem 3.6rem;
   background-color: var(--color-black);
-}
 
-.logo {
-  margin-bottom: 2.4rem;
-}
-
-.iconContainer {
-  margin-bottom: 3.6rem;
-}
-
-.link {
-  transition: all 500ms;
-
-  &:not(:first-child) {
-    margin-left: 1.2rem;
-  }
-
-  &:visited,
-  &:link {
-    color: var(--color-white);
-    font-size: 2.4rem;
-  }
-
-  &:hover,
-  &:active {
-    color: #f2f2f2;
-  }
-}
-
-.contact {
-  transition: all 500ms;
-  margin-bottom: 1.2rem;
-
-  &:link,
-  &:visited {
+  &,
+  .link,
+  .contact,
+  .pagesTitle,
+  .pagesUl > li > a,
+  .footerText {
     color: #fff;
-    font-size: 1.6rem;
     font-family: "roboto";
-    display: block;
   }
 
-  &:hover,
-  &:active {
-    color: #f2f2f2;
+  .logo {
+    margin-bottom: 2.4rem;
   }
 
-  &:last-of-type {
-    margin-bottom: 3.6rem !important;
+  .iconContainer {
+    margin-bottom: 3.6rem;
   }
-}
 
-.pagesTitle {
-  color: #fff;
-  font-size: 1.8rem;
-  font-family: "roboto";
-  margin-bottom: 1.2rem;
-}
+  .link {
+    transition: all 500ms;
+    font-size: 2.4rem;
+    display: inline-block;
 
-.pagesUl {
-  margin-left: 2.4rem;
-
-  & > li {
-    margin-bottom: 1.2rem;
-
-    & > a {
-      transition: all 500ms;
-
-      &:visited,
-      &:link {
-        color: #fff;
-        font-size: 1.6rem;
-        font-family: "roboto";
-      }
-
-      &:hover,
-      &:link {
-        color: #f2f2f2;
-      }
+    &:not(:first-child) {
+      margin-left: 1.2rem;
     }
 
-    &:last-child {
+    &:visited,
+    &:link {
+      color: inherit;
+    }
+
+    &:hover,
+    &:active {
+      color: #f2f2f2;
+    }
+  }
+
+  .contact {
+    transition: all 500ms;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    display: block;
+
+    &:hover,
+    &:active {
+      color: #f2f2f2;
+    }
+
+    &:last-of-type {
       margin-bottom: 3.6rem;
     }
   }
-}
 
-.copyright {
-  color: #fff;
-  font-size: 1.6rem;
-  font-family: "roboto";
+  .pagesTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .pagesUl {
+    margin-left: 2.4rem;
+
+    & > li {
+      margin-bottom: 1.2rem;
+
+      & > a {
+        transition: all 500ms;
+        font-size: 1.6rem;
+
+        &:visited,
+        &:link {
+          color: inherit;
+        }
+
+        &:hover,
+        &:link {
+          color: #f2f2f2;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 3.6rem;
+      }
+    }
+  }
+
+  .footerText {
+    font-size: 1.6rem;
+  }
 }

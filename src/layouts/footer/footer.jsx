@@ -2,62 +2,70 @@ import styles from "./footer.module.scss";
 import Logo from "../../components/logo";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
-  const twitterClass = `bx bxl-twitter ${styles.icon}`;
-  const linkedInClass = `bx bxl-linkedin ${styles.icon}`;
-  const githubClass = `bx bxl-github ${styles.icon}`;
-  const upworkClass = `bx bxl-upwork ${styles.icon}`;
+const SocialIcon = ({ platform, href }) => (
+  <a href={href} className={styles.link} target="_blank">
+    <i className={`bx bxl-${platform} ${styles.icon}`} />
+  </a>
+);
 
+const socialIconsData = [
+  { platform: "twitter", href: "https://twitter.com/yaz_momani" },
+  { platform: "linkedin", href: "https://www.linkedin.com/in/yazeedalmomani" },
+  { platform: "github", href: "https://github.com/yazeedmomani" },
+  { platform: "upwork", href: "https://www.upwork.com/freelancers/~01428ceffca847ca7a" },
+];
+
+const contactData = {
+  phone: "+962798697131",
+  email: "yazeed.02.momani@outlook.com",
+};
+
+const pagesData = [
+  { name: "About", path: "/about" },
+  { name: "Projects", path: "/projects" },
+];
+
+export default function Footer() {
+  // Event handlers
+  const handleClickLogo = () => window.scrollTo(0, 0);
+
+  // JSX code
   return (
     <footer className={styles.footer}>
-      <Link to="/">
-        <Logo
-          dark
-          className={styles.logo}
-        />
+      {/* Logo */}
+      <Link to="/" onClick={handleClickLogo}>
+        <Logo dark className={styles.logo} />
       </Link>
+
+      {/* Social media icons */}
       <div className={styles.iconContainer}>
-        <a
-          href="https://twitter.com/yaz_momani"
-          className={styles.link}>
-          <i className={twitterClass}></i>
+        {socialIconsData.map((socialIcon) => (
+          <SocialIcon key={socialIcon.platform} platform={socialIcon.platform} href={socialIcon.href} />
+        ))}
+      </div>
+
+      {/* Contact information */}
+      <div className={styles.contactContainer}>
+        <a href={`tel:${contactData.phone}`} className={styles.contact}>
+          {contactData.phone}
         </a>
-        <a
-          href="https://www.linkedin.com/in/yazeedalmomani"
-          className={styles.link}>
-          <i className={linkedInClass}></i>
-        </a>
-        <a
-          href="https://github.com/yazeedmomani"
-          className={styles.link}>
-          <i className={githubClass}></i>
-        </a>
-        <a
-          href="https://www.upwork.com/freelancers/~01428ceffca847ca7a"
-          className={styles.link}>
-          <i className={upworkClass}></i>
+        <a href={`mailto:${contactData.email}`} className={styles.contact}>
+          {contactData.email}
         </a>
       </div>
-      <a
-        href="tel:+962798697131"
-        className={styles.contact}>
-        +962798697131
-      </a>
-      <a
-        href="mailto:yazeed.02.momani@outlook.com"
-        className={styles.contact}>
-        yazeed.02.momani@outlook.com
-      </a>
+
+      {/* Pages */}
       <h2 className={styles.pagesTitle}>Pages</h2>
       <ul className={styles.pagesUl}>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
+        {pagesData.map(({ name, path }) => (
+          <li key={path}>
+            <Link to={path}>{name}</Link>
+          </li>
+        ))}
       </ul>
-      <p className={styles.copyright}>&copy; 2023 Yazeed al-Momani</p>
+
+      {/* Footer text */}
+      <p className={styles.footerText}>&copy; 2023 Yazeed al-Momani</p>
     </footer>
   );
 }
