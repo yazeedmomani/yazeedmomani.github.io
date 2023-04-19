@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Logo from "../../components/logo/";
+import Menu from "../menu/";
 import styles from "./nav.module.scss";
 
 export default function Nav() {
-  function handleMenu(e) {
-    //TODO Open menu
+  const [showMenu, setShowMenu] = useState(false);
+
+  function handleMenu() {
+    setShowMenu(true);
   }
 
   return (
@@ -13,6 +17,7 @@ export default function Nav() {
         className={`bx bx-menu ${styles.icon}`}
         onClick={handleMenu}
       />
+      {showMenu && <Menu setShowMenu={setShowMenu} />}
     </nav>
   );
 }

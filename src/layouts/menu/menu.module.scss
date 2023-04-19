@@ -1,0 +1,40 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-backdrop);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 0 3.6rem;
+}
+
+.iconContainer {
+  height: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon {
+  font-size: 3.6rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.link {
+  font-size: 3.2rem;
+  font-family: "roboto";
+  font-weight: var(--font-weight-bold);
+
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  & a {
+    &:link,
+    &:visited {
+      color: var(--color-white);
+    }
+  }
+}
