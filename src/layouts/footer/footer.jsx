@@ -48,6 +48,15 @@ export default function Footer() {
         className={styles.contact}>
         yazeed.02.momani@outlook.com
       </a>
+      <h2 className={styles.pagesTitle}>Pages</h2>
+      <ul className={styles.pagesUl}>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+      </ul>
     </footer>
   );
 }
