@@ -1,16 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import "./styles/reset.scss";
-import "./styles/variables.scss";
-import "./styles/typography.scss";
-import "./styles/index.scss";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root/";
+import "./styles/index.scss";
+import "./styles/reset.scss";
+import "./styles/typography.scss";
+import "./styles/variables.scss";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Root />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
