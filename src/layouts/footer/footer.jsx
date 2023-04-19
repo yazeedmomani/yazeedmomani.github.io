@@ -20,22 +20,22 @@ export default function Footer() {
         <a
           href="https://twitter.com/yaz_momani"
           className={styles.link}>
-          <i class={twitterClass}></i>
+          <i className={twitterClass}></i>
         </a>
         <a
           href="https://www.linkedin.com/in/yazeedalmomani"
           className={styles.link}>
-          <i class={linkedInClass}></i>
+          <i className={linkedInClass}></i>
         </a>
         <a
           href="https://github.com/yazeedmomani"
           className={styles.link}>
-          <i class={githubClass}></i>
+          <i className={githubClass}></i>
         </a>
         <a
           href="https://www.upwork.com/freelancers/~01428ceffca847ca7a"
           className={styles.link}>
-          <i class={upworkClass}></i>
+          <i className={upworkClass}></i>
         </a>
       </div>
       <a
