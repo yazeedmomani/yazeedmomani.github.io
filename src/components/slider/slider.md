@@ -2,41 +2,14 @@
 
 Description: A reusable Slider component for React applications, utilizing the Swiper library for creating responsive, customizable, and touch-friendly carousels.
 
-## Table of Contents
+## Import and Dependencies
 
-- Component Code
-- Usage
+The component imports the necessary libraries and components, such as:
 
-## Component Code
-
-```
-import React from "react";
-import { Swiper } from "swiper/react";
-import "swiper/css";
-
-const swiperConfig = {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-};
-
-export default function Slider({ children }) {
-  return <Swiper {...swiperConfig}>{children}</Swiper>;
-}
-```
-
-### Dependencies
-
-- `react`
-- `swiper`
+- React: The JavaScript library for building user interfaces
+- Swiper and useSwiper: The Swiper library and custom hook for implementing the slider
+- Arrow: A custom Arrow component for creating the previous and next buttons
+- styles: A SASS module containing the styling for the slider
 
 ### Configuration
 
@@ -51,6 +24,14 @@ The `swiperConfig` object contains the following properties:
 - `navigation`: An object configuring the navigation elements, with properties:
   - `nextEl`: The CSS selector for the "next" navigation button (default: ".swiper-button-next").
   - `prevEl`: The CSS selector for the "previous" navigation button (default: ".swiper-button-prev").
+
+## NextButton and PreviousButton Components
+
+The `NextButton` and `PreviousButton` components are functional components that use the `useSwiper` hook to access the Swiper instance. These components utilize the custom Arrow component with appropriate direction props, onClick handlers, and CSS class names.
+
+## Slider Component
+
+The main `Slider` component takes a `children` prop that contains the slides to be rendered inside the carousel. The Swiper component receives the `swiperConfig` as its properties, and the `children` slides are placed inside it. The previous and next buttons are rendered within a container with a specific CSS class name.
 
 ## Usage
 
@@ -82,5 +63,3 @@ The `swiperConfig` object contains the following properties:
      </SwiperSlide>
    </Slider>
    ```
-
-3. Add the necessary CSS classes for the pagination and navigation elements in your stylesheets.
