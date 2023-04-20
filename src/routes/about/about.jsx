@@ -1,5 +1,6 @@
 import Breadcrumb from "../../components/breadcrumb";
 import styles from "./about.module.scss";
+import AboutMe from "../../layouts/about/about-me";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -14,7 +15,11 @@ const BREADCRUMB_ITEMS = [
 export default function About() {
   return (
     <main className={styles.main}>
-      <Breadcrumb items={BREADCRUMB_ITEMS} />
+      <Breadcrumb
+        items={BREADCRUMB_ITEMS}
+        className={styles.breadcrumb}
+      />
+      <AboutMe />
     </main>
   );
 }
