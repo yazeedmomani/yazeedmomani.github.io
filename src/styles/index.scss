@@ -2,3 +2,13 @@
   font-family: "Comic Sans";
   src: url("../fonts/comic-sans.ttf") format("truetype");
 }
+
+::-moz-selection {
+  background-color: #d68100;
+  color: var(--color-white);
+}
+
+::selection {
+  background-color: #d68100;
+  color: var(--color-white);
+}

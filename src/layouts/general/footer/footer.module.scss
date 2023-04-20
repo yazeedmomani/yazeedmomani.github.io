@@ -21,7 +21,7 @@
   }
 
   .link {
-    transition: all 500ms;
+    transition: all 300ms;
     font-size: 2.4rem;
     display: inline-block;
 
@@ -36,19 +36,19 @@
 
     &:hover,
     &:active {
-      color: #f2f2f2;
+      color: #d68100;
     }
   }
 
   .contact {
-    transition: all 500ms;
+    transition: all 300ms;
     margin-bottom: 1.2rem;
     font-size: 1.6rem;
     display: block;
 
     &:hover,
     &:active {
-      color: #f2f2f2;
+      color: #d68100;
     }
 
     &:last-of-type {
@@ -68,7 +68,7 @@
       margin-bottom: 1.2rem;
 
       & > a {
-        transition: all 500ms;
+        transition: all 300ms;
         font-size: 1.6rem;
 
         &:visited,
@@ -78,7 +78,7 @@
 
         &:hover,
         &:link {
-          color: #f2f2f2;
+          color: #d68100;
         }
       }
 
