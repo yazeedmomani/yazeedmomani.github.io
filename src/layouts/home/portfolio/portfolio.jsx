@@ -5,6 +5,13 @@ import { SwiperSlide } from "swiper/react";
 import ImageCard from "../../../components/image-card";
 import image from "../../../images/josor-steels.png";
 
+const SLIDES = [
+  {
+    src: require("../../../images/josor-steels.png"),
+    alt: "Blueprint of a hunger watermarked by the logo of Josor Steels company",
+  },
+];
+
 export default function Portfolio() {
   return (
     <section className={styles.portfolio}>
@@ -15,21 +22,14 @@ export default function Portfolio() {
         dark
       />
       <Slider>
-        <SwiperSlide>
-          <ImageCard
-            src={image}
-            alt="Blueprint of a hunger watermarked by the logo of Josor Steels company"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1>Slide 2</h1>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1>Slide 3</h1>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1>Slide 4</h1>
-        </SwiperSlide>
+        {SLIDES.map((current, index) => (
+          <SwiperSlide key={index}>
+            <ImageCard
+              src={current.src}
+              alt={current.alt}
+            />
+          </SwiperSlide>
+        ))}
       </Slider>
     </section>
   );
