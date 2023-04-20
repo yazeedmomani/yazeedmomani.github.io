@@ -3,13 +3,18 @@ import { Swiper, useSwiper } from "swiper/react";
 import "swiper/css";
 import Arrow from "../arrow";
 import styles from "./slider.module.scss";
+import { Autoplay, Pagination } from "swiper";
+import "swiper/css/pagination";
 
 const swiperConfig = {
+  Autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
     clickable: true,
   },
   navigation: {
@@ -48,7 +53,9 @@ function PreviousButton() {
 
 export default function Slider({ children }) {
   return (
-    <Swiper {...swiperConfig}>
+    <Swiper
+      {...swiperConfig}
+      modules={[Pagination]}>
       {children}
       <div className={styles.arrowContainer}>
         <PreviousButton />
