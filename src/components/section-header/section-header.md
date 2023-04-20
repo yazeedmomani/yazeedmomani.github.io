@@ -12,7 +12,7 @@ Description: The `SectionHeader` component is a functional React component used 
 ## Example Usage
 
 ```
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "./section-header";
 
 function MyComponent() {
   return (
