@@ -1,5 +1,7 @@
 import styles from "./portoflio.module.scss";
 import SectionHeader from "../../../components/section-header";
+import Slider from "../../../components/slider";
+import { SwiperSlide } from "swiper/react";
 
 export default function Portfolio() {
   return (
@@ -10,6 +12,20 @@ export default function Portfolio() {
         sectionTitle="My latest projects"
         dark
       />
+      <Slider>
+        <SwiperSlide>
+          <h1>Slide 1</h1>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h1>Slide 2</h1>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h1>Slide 3</h1>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h1>Slide 4</h1>
+        </SwiperSlide>
+      </Slider>
     </section>
   );
 }

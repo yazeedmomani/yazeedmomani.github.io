@@ -1,4 +1,10 @@
-.portfolio{
-    background-color: #838383;
-    padding: 7.2rem 3.6rem;
+.portfolio {
+  background-color: #838383;
+  padding: 7.2rem 3.6rem;
+}
+
+.sectionHeader {
+  & + h2 {
+    margin-bottom: 4.8rem;
+  }
 }
