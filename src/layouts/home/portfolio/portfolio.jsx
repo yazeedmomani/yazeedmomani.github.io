@@ -2,6 +2,8 @@ import styles from "./portoflio.module.scss";
 import SectionHeader from "../../../components/section-header";
 import Slider from "../../../components/slider";
 import { SwiperSlide } from "swiper/react";
+import ImageCard from "../../../components/image-card";
+import image from "../../../images/josor-steels.png";
 
 export default function Portfolio() {
   return (
@@ -14,7 +16,10 @@ export default function Portfolio() {
       />
       <Slider>
         <SwiperSlide>
-          <h1>Slide 1</h1>
+          <ImageCard
+            src={image}
+            alt="Blueprint of a hunger watermarked by the logo of Josor Steels company"
+          />
         </SwiperSlide>
         <SwiperSlide>
           <h1>Slide 2</h1>
