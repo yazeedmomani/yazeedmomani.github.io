@@ -1,9 +1,14 @@
 import styles from "./about-me.module.scss";
+import SectionHeader from "../../../components/section-header";
 
 export default function AboutMe() {
   return (
     <section className={styles.section}>
-      <h1>About me</h1>
+      <SectionHeader
+        name="About me"
+        title="Who is yazeed?"
+        className={styles.sectionHeader}
+      />
     </section>
   );
 }
