@@ -1,0 +1,25 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Comic Sans";
+
+  & a {
+    color: #d68100;
+    border-bottom: 1px solid transparent;
+    transition: all 300ms;
+
+    &:hover {
+      border-bottom: 1px solid #d68100;
+    }
+  }
+
+  & i{
+    margin: 0 .6rem;
+    font-size: 1.8rem;
+  }
+
+  & span {
+    cursor: default;
+  }
+}
