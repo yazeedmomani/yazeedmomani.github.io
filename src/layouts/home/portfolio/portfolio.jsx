@@ -3,7 +3,6 @@ import SectionHeader from "../../../components/section-header";
 import Slider from "../../../components/slider";
 import { SwiperSlide } from "swiper/react";
 import ImageCard from "../../../components/image-card";
-import image from "../../../images/josor-steels.png";
 
 const SLIDES = [
   {
