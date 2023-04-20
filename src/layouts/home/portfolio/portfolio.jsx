@@ -7,9 +7,9 @@ export default function Portfolio() {
   return (
     <section className={styles.portfolio}>
       <SectionHeader
-        sectionName="Portfolio"
+        name="Portfolio"
         className={styles.sectionHeader}
-        sectionTitle="My latest projects"
+        title="My latest projects"
         dark
       />
       <Slider>
