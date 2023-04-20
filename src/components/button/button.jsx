@@ -5,6 +5,7 @@ export default function Button({ className, children, primary, ...props }) {
 
   return (
     <a
+      role="button"
       className={buttonClass}
       {...props}>
       {children}

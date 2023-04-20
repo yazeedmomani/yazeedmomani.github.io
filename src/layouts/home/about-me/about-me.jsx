@@ -1,5 +1,6 @@
 import styles from "./about-me.module.scss";
 import SectionHeader from "../../../components/section-header";
+import Button from "../../../components/button";
 
 export default function AboutMe() {
   return (
@@ -15,6 +16,7 @@ export default function AboutMe() {
         solutions. I empower businesses and individuals to elevate their digital
         presence with expertly crafted React front-end web interfaces.
       </p>
+      <Button className={styles.btn}>Learn more</Button>
     </section>
   );
 }
