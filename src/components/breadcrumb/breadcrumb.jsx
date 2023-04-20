@@ -12,33 +12,12 @@ function renderItem(itemsLength, currentItem, currentIndex) {
   );
 }
 
-export default function Breadcrumb({ items }) {
+export default function Breadcrumb({ items, className }) {
   const itemsLength = items.length;
 
   return (
-    <div className={styles.breadcrumb}>
+    <div className={`${styles.breadcrumb} ${className}`}>
       {items.map((current, index) => renderItem(itemsLength, current, index))}
     </div>
   );
 }
-
-/*
-NOTE Below is an example of how `items` should look like
-
-items = [
-    {
-        text: "Home",
-        to: "/",
-    },
-    {
-        text: "Projects",
-        to: "/projects",
-    },
-    {
-        text: "Josor Steels",
-    }
-]
-
-NOTE Last item in items always does not have a `to` property.
-
-*/

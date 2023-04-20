@@ -4,7 +4,7 @@ The Breadcrumb component is a navigational aid that displays the current page's 
 
 ## Usage
 
-To use the Breadcrumb component, import it and pass an array of `items` as a prop. Each item in the array represents a step in the navigation hierarchy, with the last item being the current page.
+To use the Breadcrumb component, import it and pass an array of `items` as a prop. Each item in the array represents a step in the navigation hierarchy, with the last item being the current page. You can also pass an optional `className` prop to apply additional styling.
 
 Here's an example of how to use the Breadcrumb component:
 
@@ -28,7 +28,7 @@ const items = [
 function App() {
   return (
     <div>
-      <Breadcrumb items={items} />
+      <Breadcrumb items={items} className="customClassName" />
     </div>
   );
 }
@@ -45,6 +45,7 @@ function App() {
 The Breadcrumb component accepts the following props:
 
 - `items` (required): An array of objects representing the navigation hierarchy. Each object should have a `text` property (string) with the text to display, and a `to` property (string) with the path to navigate to when clicked. The last item in the array should not have a `to` property, as it represents the current page.
+- `className` (optional): A string representing an additional CSS class name to be applied to the Breadcrumb component. This can be used for further customization of the component's appearance.
 
 Example:
 
@@ -64,7 +65,6 @@ const items = [
 ];
 ```
 
-
 ## Styling
 
-The component uses the `breadcrumb.module.scss` file for styling. Import the styles and customize the look and feel as needed.
+The component uses the `breadcrumb.module.scss` file for styling. Import the styles and customize the look and feel as needed. To apply additional styles, pass the `className` prop with a custom CSS class name.

@@ -1,4 +1,5 @@
 import Breadcrumb from "../../components/breadcrumb";
+import styles from "./about.module.scss";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -12,7 +13,7 @@ const BREADCRUMB_ITEMS = [
 
 export default function About() {
   return (
-    <main>
+    <main className={styles.main}>
       <Breadcrumb items={BREADCRUMB_ITEMS} />
     </main>
   );
