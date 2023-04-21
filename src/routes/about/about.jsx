@@ -2,6 +2,7 @@ import Breadcrumb from "../../components/breadcrumb";
 import styles from "./about.module.scss";
 import AboutMe from "../../layouts/about/about-me";
 import Experience from "../../layouts/about/experience";
+import Education from "../../layouts/about/education";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -22,6 +23,7 @@ export default function About() {
       />
       <AboutMe />
       <Experience />
+      <Education />
     </main>
   );
 }

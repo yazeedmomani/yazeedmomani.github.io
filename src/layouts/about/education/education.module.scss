@@ -1,0 +1,9 @@
+.section {
+  margin-bottom: 14.4rem;
+
+  .sectionHeader {
+    & + h2 {
+      margin-bottom: 4.8rem;
+    }
+  }
+}
