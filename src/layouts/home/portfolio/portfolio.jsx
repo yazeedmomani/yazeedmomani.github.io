@@ -11,6 +11,21 @@ const SLIDES = [
     alt: "Blueprint of a hunger watermarked by the logo of Josor Steels company",
     to: "/projects/wrk_web_josor-steels",
   },
+  {
+    src: require("../../../images/josor-steels.png"),
+    alt: "Blueprint of a hunger watermarked by the logo of Josor Steels company",
+    to: "/projects/wrk_web_josor-steels",
+  },
+  {
+    src: require("../../../images/josor-steels.png"),
+    alt: "Blueprint of a hunger watermarked by the logo of Josor Steels company",
+    to: "/projects/wrk_web_josor-steels",
+  },
+  {
+    src: require("../../../images/josor-steels.png"),
+    alt: "Blueprint of a hunger watermarked by the logo of Josor Steels company",
+    to: "/projects/wrk_web_josor-steels",
+  },
 ];
 
 export default function Portfolio() {
