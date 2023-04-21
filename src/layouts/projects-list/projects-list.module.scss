@@ -1,3 +1,9 @@
 .imageCard {
   margin-bottom: 9.6rem;
 }
+
+.sectionHeader {
+  & + h2 {
+    margin-bottom: 4.8rem;
+  }
+}

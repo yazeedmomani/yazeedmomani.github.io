@@ -6,6 +6,7 @@ import { useState } from "react";
 import Arrow from "../../components/arrow";
 import ImageCard from "../../components/image-card";
 import { Link } from "react-router-dom";
+import SectionHeader from "../../components/section-header";
 
 function renderProjectList(currentPage, itemsPerPage) {
   const startIndex = currentPage - 1;
@@ -36,6 +37,11 @@ export default function ProjectsList() {
 
   return (
     <>
+      <SectionHeader
+        className={styles.sectionHeader}
+        title="My accomplished projects"
+        name="projects"
+      />
       {renderProjectList(currentPage, itemsPerPage)}
       <Pagination
         simple
