@@ -10,14 +10,18 @@ export default function Description() {
   const { name, image, alt, statements, paragraphs, link } = projectData;
 
   return (
-    <article>
+    <article className={styles.article}>
       <h2>{name}</h2>
       <ImageCard
         src={image}
         alt={alt}
         animated
+        className={styles.imageCard}
       />
-      <MultiInfoHeader statements={statements} />
+      <MultiInfoHeader
+        statements={statements}
+        className={styles.multiInfoHeader}
+      />
       {paragraphs?.map((current, index) => (
         <p key={index}>{current}</p>
       ))}
