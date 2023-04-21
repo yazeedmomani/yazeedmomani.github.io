@@ -9,6 +9,7 @@ import "./styles/index.scss";
 import "./styles/reset.scss";
 import "./styles/typography.scss";
 import "./styles/variables.scss";
+import "./styles/rc-pagination.scss";
 
 const router = createBrowserRouter([
   {

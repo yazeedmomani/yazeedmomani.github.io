@@ -27,6 +27,7 @@ export default function ProjectsList() {
     <>
       {renderProjectList(currentPage, itemsPerPage)}
       <Pagination
+        simple
         current={currentPage} // set the current page number
         total={projects.length} // set the total number of items
         pageSize={itemsPerPage} // set the number of items per page

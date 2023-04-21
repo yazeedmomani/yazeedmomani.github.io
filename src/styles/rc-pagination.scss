@@ -1,0 +1,46 @@
+.rc-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19.6rem;
+
+  &-simple {
+    height: 3.6rem;
+  }
+
+  &-item,
+  &-prev,
+  &-next {
+    width: 3.6rem !important;
+    height: 3.6rem !important;
+  }
+
+  &-simple-pager {
+    height: 3.6rem !important;
+    margin: 0 !important;
+    padding-right: 1.8rem;
+    cursor: default;
+
+    & input {
+      padding: 0 !important;
+      margin: 0 !important;
+      height: 3.6rem !important;
+      border-radius: 1.5rem !important;
+
+      &:hover{
+        border: 1px solid #d68100 !important;
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  &::after {
+    display: none;
+  }
+}
