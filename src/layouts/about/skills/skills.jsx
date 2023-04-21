@@ -21,11 +21,11 @@ export default function Skills() {
         title="My toolbox of abilities"
       />
       <ul>
-        {SKILLS.map((skill, index) => (
-          <li key={skill}>
+        {SKILLS.map((current, index) => (
+          <li key={current}>
             <MultiInfoHeader
               className={styles.multiInfoHeader}
-              title={`${index + 1}. ${skill}`}
+              title={`${index + 1}. ${current}`}
             />
           </li>
         ))}
