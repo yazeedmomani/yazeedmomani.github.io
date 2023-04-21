@@ -43,5 +43,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// TODO Fix logo
