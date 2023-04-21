@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.7e54f709.css",
-    "main.js": "/static/js/main.0b90d7bc.js",
+    "main.js": "/static/js/main.ecb7b058.js",
     "static/media/josor-steels.png": "/static/media/josor-steels.df1eaa8192d50844a6c0.png",
     "static/media/comic-sans.ttf": "/static/media/comic-sans.3198d266c6629f0b7ce0.ttf",
     "index.html": "/index.html",
     "main.7e54f709.css.map": "/static/css/main.7e54f709.css.map",
-    "main.0b90d7bc.js.map": "/static/js/main.0b90d7bc.js.map"
+    "main.ecb7b058.js.map": "/static/js/main.ecb7b058.js.map"
   },
   "entrypoints": [
     "static/css/main.7e54f709.css",
-    "static/js/main.0b90d7bc.js"
+    "static/js/main.ecb7b058.js"
   ]
 }
