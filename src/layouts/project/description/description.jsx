@@ -18,7 +18,7 @@ export default function Description() {
         animated
       />
       <MultiInfoHeader statements={statements} />
-      {paragraphs.map((current, index) => (
+      {paragraphs?.map((current, index) => (
         <p key={index}>{current}</p>
       ))}
       <a href={link}>{link}</a>
