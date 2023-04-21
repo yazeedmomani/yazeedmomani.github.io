@@ -92,3 +92,21 @@
     font-size: 1.6rem;
   }
 }
+
+@media (min-width: 600px) {
+  .footer {
+    padding: 7.2rem 4.8rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer {
+    padding: 7.2rem 7.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 7.2rem 9.6rem;
+  }
+}
