@@ -4,6 +4,7 @@ import AboutMe from "../../layouts/about/about-me";
 import Experience from "../../layouts/about/experience";
 import Education from "../../layouts/about/education";
 import Certifications from "../../layouts/about/certifications";
+import Skills from "../../layouts/about/skills";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -26,6 +27,7 @@ export default function About() {
       <Experience />
       <Education />
       <Certifications />
+      <Skills />
     </main>
   );
 }
