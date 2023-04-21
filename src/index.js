@@ -9,9 +9,6 @@ import "./styles/reset.scss";
 import "./styles/typography.scss";
 import "./styles/variables.scss";
 
-// TODO Add 404 page
-// TODO Implement scroll to top
-// TODO Fix logo
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,3 +32,7 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+// TODO Add 404 page
+// TODO Implement scroll to top
+// TODO Fix logo
