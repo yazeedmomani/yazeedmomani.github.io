@@ -2,6 +2,7 @@ import styles from "./project.module.scss";
 import Breadcrumb from "../../components/breadcrumb";
 import { useParams } from "react-router-dom";
 import data from "../../layouts/project/description/description.content";
+import Description from "../../layouts/project/description";
 
 export default function Project() {
   const { id } = useParams();
@@ -28,6 +29,7 @@ export default function Project() {
         className={styles.breadcrumb}
         items={breadcrumbItems}
       />
+      <Description />
     </main>
   );
 }
