@@ -4,6 +4,8 @@ import "rc-pagination/assets/index.css";
 import projects from "./projects-list.content";
 import { useState } from "react";
 import Arrow from "../../components/arrow";
+import ImageCard from "../../components/image-card";
+import { Link } from "react-router-dom";
 
 function renderProjectList(currentPage, itemsPerPage) {
   const startIndex = currentPage - 1;
@@ -12,8 +14,17 @@ function renderProjectList(currentPage, itemsPerPage) {
 
   return (
     <>
-      {renderedProjects.map((current) => (
-        <h1>{current.alt}</h1>
+      {renderedProjects.map((current, index) => (
+        <Link
+          to={current.to}
+          key={index}>
+          <ImageCard
+            animated
+            className={styles.imageCard}
+            alt={current.alt}
+            src={current.image}
+          />
+        </Link>
       ))}
     </>
   );
@@ -21,7 +32,7 @@ function renderProjectList(currentPage, itemsPerPage) {
 
 export default function ProjectsList() {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 1;
+  const itemsPerPage = 5;
 
   return (
     <>

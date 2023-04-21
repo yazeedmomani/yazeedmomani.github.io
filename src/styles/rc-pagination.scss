@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 19.6rem;
+  margin-bottom: 19.6rem !important;
 
   &-simple {
     height: 3.6rem;
@@ -41,6 +41,6 @@
   }
 
   &::after {
-    display: none;
+    display: none !important;
   }
 }
