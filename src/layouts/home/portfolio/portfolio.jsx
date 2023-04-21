@@ -3,11 +3,13 @@ import SectionHeader from "../../../components/section-header";
 import Slider from "../../../components/slider";
 import { SwiperSlide } from "swiper/react";
 import ImageCard from "../../../components/image-card";
+import { Link } from "react-router-dom";
 
 const SLIDES = [
   {
     src: require("../../../images/josor-steels.png"),
     alt: "Blueprint of a hunger watermarked by the logo of Josor Steels company",
+    to: "/projects/wrk_web_josor-steels",
   },
 ];
 
@@ -23,10 +25,12 @@ export default function Portfolio() {
       <Slider>
         {SLIDES.map((current, index) => (
           <SwiperSlide key={index}>
-            <ImageCard
-              src={current.src}
-              alt={current.alt}
-            />
+            <Link to={current.to}>
+              <ImageCard
+                src={current.src}
+                alt={current.alt}
+              />
+            </Link>
           </SwiperSlide>
         ))}
       </Slider>
