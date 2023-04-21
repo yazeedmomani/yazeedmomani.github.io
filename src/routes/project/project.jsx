@@ -3,6 +3,7 @@ import Breadcrumb from "../../components/breadcrumb";
 import { useParams } from "react-router-dom";
 import data from "../../layouts/project/description/description.content";
 import Description from "../../layouts/project/description";
+import { Helmet } from "react-helmet-async";
 
 export default function Project() {
   const { id } = useParams();
@@ -27,6 +28,9 @@ export default function Project() {
 
   return (
     <main className={styles.main}>
+      <Helmet>
+        <title>{projectName} | Yaz</title>
+      </Helmet>
       <Breadcrumb
         className={styles.breadcrumb}
         items={breadcrumbItems}

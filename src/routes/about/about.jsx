@@ -7,6 +7,7 @@ import Certifications from "../../layouts/about/certifications";
 import Skills from "../../layouts/about/skills";
 import Languages from "../../layouts/about/langauges";
 import CTA from "../../layouts/general/cta/";
+import { Helmet } from "react-helmet-async";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -21,6 +22,9 @@ const BREADCRUMB_ITEMS = [
 export default function About() {
   return (
     <main className={styles.main}>
+      <Helmet>
+        <title>About | Yaz</title>
+      </Helmet>
       <Breadcrumb
         items={BREADCRUMB_ITEMS}
         className={styles.breadcrumb}
