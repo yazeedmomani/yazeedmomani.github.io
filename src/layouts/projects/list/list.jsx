@@ -1,12 +1,12 @@
-import styles from "./projects-list.module.scss";
+import styles from "./list.module.scss";
 import Pagination from "rc-pagination";
 import "rc-pagination/assets/index.css";
-import projects from "./projects-list.content";
+import projects from "./list.content";
 import { useState } from "react";
-import Arrow from "../../components/arrow";
-import ImageCard from "../../components/image-card";
+import Arrow from "../../../components/arrow";
+import ImageCard from "../../../components/image-card";
 import { Link } from "react-router-dom";
-import SectionHeader from "../../components/section-header";
+import SectionHeader from "../../../components/section-header";
 
 function renderProjectList(currentPage, itemsPerPage) {
   const startIndex = currentPage - 1;
@@ -31,7 +31,7 @@ function renderProjectList(currentPage, itemsPerPage) {
   );
 }
 
-export default function ProjectsList() {
+export default function List() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 

@@ -45,5 +45,6 @@ root.render(
 );
 
 // TODO Add 404 page
+// TODO Add 404 page for Projects
 // TODO Implement scroll to top
 // TODO Fix logo
