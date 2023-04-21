@@ -6,6 +6,7 @@ import Education from "../../layouts/about/education";
 import Certifications from "../../layouts/about/certifications";
 import Skills from "../../layouts/about/skills";
 import Languages from "../../layouts/about/langauges";
+import CTA from "../../layouts/general/cta/";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -30,6 +31,7 @@ export default function About() {
       <Certifications />
       <Skills />
       <Languages />
+      <CTA className={styles.cta} />
     </main>
   );
 }
