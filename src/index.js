@@ -11,6 +11,7 @@ import "./styles/variables.scss";
 
 // TODO Add 404 page
 // TODO Implement scroll to top
+// TODO Fix logo
 const router = createBrowserRouter([
   {
     path: "/",
