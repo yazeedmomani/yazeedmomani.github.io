@@ -18,7 +18,7 @@ export default function Header() {
         </Button>
         <Button
           download
-          href={`${process.env.PUBLIC_URL}/resume_yazeed-al-momani.pdf`}>
+          href={`${process.env.PUBLIC_URL}/yazeed-al-momani.pdf`}>
           Resume
         </Button>
       </div>
