@@ -1,14 +1,15 @@
 import styles from "./breadcrumb.module.scss";
 import { Link } from "react-router-dom";
+import { Fragment } from "react";
 
 function renderItem(itemsLength, currentItem, currentIndex) {
-  if (itemsLength - 1 === currentIndex) return <span>{currentItem.text}</span>;
+  if (itemsLength - 1 === currentIndex) return <span key={currentIndex}>{currentItem.text}</span>;
 
   return (
-    <>
+    <Fragment key={currentIndex}>
       <Link to={currentItem.to}>{currentItem.text}</Link>
       <i className="bx bx-chevron-right"></i>
-    </>
+    </Fragment>
   );
 }
 
