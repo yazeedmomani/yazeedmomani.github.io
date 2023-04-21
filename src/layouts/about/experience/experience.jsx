@@ -34,8 +34,8 @@ export default function Experience() {
       </p>
       <p>
         The website hosted on{" "}
-        <a href="https://yazeedmomani.github.io/josor-steels">
-          https://yazeedmomani.github.io/josor-steels
+        <a href="https://yazeedalmomani.com/wrk_web_josor-steels">
+          https://yazeedalmomani.com/wrk_web_josor-steels
         </a>{" "}
         is the result of my work. All that is left is to add the contents and
         deploy it.

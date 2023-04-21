@@ -14,7 +14,7 @@ const data = [
       "I redrew the logo using Adobe Illustrator with a light background, a dark background, and a transparent background and exported it in different formats including SVG, PNG, and ICO. Then, I proceeded by designing the website using Adobe XD. After that, I developed the website using ReactJS, taking the mobile-first approach.",
       "The website hosted on the link below is the result of my work. All that is left is to add the contents and deploy it",
     ],
-    link: "yazeedmomani.github.io/wrk_web_josor-steels",
+    link: "https://yazeedalmomani.com/wrk_web_josor-steels",
   },
 ];
 
