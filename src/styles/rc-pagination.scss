@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 19.6rem !important;
+  margin: 0 auto 19.6rem !important;
+  max-width: 50rem;
+
 
   &-simple {
     height: 3.6rem;
