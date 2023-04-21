@@ -1,18 +1,18 @@
 .section {
-    margin-bottom: 14.4rem;
-    
+  margin-bottom: 14.4rem;
+
   .sectionHeader {
     & + h2 {
       margin-bottom: 1.2rem;
     }
   }
 
-  & p{
+  & p {
     font-size: 1.6rem;
     font-family: "roboto";
 
-    &:not(:last-child){
-        margin-bottom: 1.2rem;
+    &:not(:last-child) {
+      margin-bottom: 1.2rem;
     }
   }
 }
