@@ -18,7 +18,7 @@ export default function Languages() {
       />
       <ul>
         {LANGUAGES.map((current, index) => (
-          <li key={current}>
+          <li key={index}>
             <MultiInfoHeader
               className={styles.multiInfoHeader}
               title={`${index + 1}. ${current.languages}`}
