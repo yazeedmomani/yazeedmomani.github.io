@@ -19,7 +19,7 @@ export default function Header() {
         <Button
           download
           href="../../../pdf/resume_yazeed-al-momani.pdf">
-          Download resume
+          Resume
         </Button>
       </div>
     </header>
