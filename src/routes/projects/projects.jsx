@@ -1,5 +1,6 @@
 import Breadcrumb from "../../components/breadcrumb";
 import styles from "./projects.module.scss";
+import ProjectsList from "../../layouts/projects-list";
 
 const BREADCRUMB_ITEMS = [
   {
@@ -18,6 +19,7 @@ export default function Projects() {
         items={BREADCRUMB_ITEMS}
         className={styles.breadcrumb}
       />
+      <ProjectsList />
     </main>
   );
 }
