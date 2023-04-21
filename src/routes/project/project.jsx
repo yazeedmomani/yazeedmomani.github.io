@@ -7,7 +7,9 @@ import Description from "../../layouts/project/description";
 export default function Project() {
   const { id } = useParams();
 
-  const projectName = data.find((current) => current.id === id).name;
+  const projectName = data.find((current) => current.id === id)?.name;
+
+  if (!projectName) return <p className={styles.notFound}>404 Not Found</p>;
 
   const breadcrumbItems = [
     {
