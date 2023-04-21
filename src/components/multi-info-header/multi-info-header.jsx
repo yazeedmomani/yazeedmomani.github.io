@@ -9,7 +9,3 @@ export default function MultiInfoHeader({ className, title, statements }) {
     </div>
   );
 }
-
-/*
-NOTE statements prop accepts an array of statements and turn them to spans
-*/
