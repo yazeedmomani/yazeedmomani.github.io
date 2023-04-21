@@ -1,7 +1,7 @@
 import Breadcrumb from "../../components/breadcrumb";
 import styles from "./about.module.scss";
 import AboutMe from "../../layouts/about/about-me";
-import Experience from "../../layouts/about/experience/experience";
+import Experience from "../../layouts/about/experience";
 
 const BREADCRUMB_ITEMS = [
   {
