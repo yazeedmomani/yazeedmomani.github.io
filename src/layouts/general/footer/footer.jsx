@@ -23,7 +23,7 @@ const socialIconsData = [
 
 const contactData = {
   phone: "+962798697131",
-  email: "yazeed.02.momani@outlook.com",
+  email: "contact@yazeedalmomani.com",
 };
 
 const pagesData = [
