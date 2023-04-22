@@ -8,11 +8,23 @@
   & h1 {
     margin-bottom: 1.2rem;
 
-    & span {
+    & div{
+      display: inline;
+    }
+
+    & span:first-child {
+      display: block;
+    }
+
+    & span{
+      display: inline-block;
+    }
+
+    & span.primary {
       font-family: "Comic Sans";
       color: #d68100;
 
-      &:first-child {
+      &.large {
         font-size: 4.8rem;
         display: block;
       }
