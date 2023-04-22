@@ -4,6 +4,7 @@ import Slider from "../../../components/slider";
 import { SwiperSlide } from "swiper/react";
 import ImageCard from "../../../components/image-card";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 const SLIDES = [
   {
@@ -16,24 +17,35 @@ const SLIDES = [
 export default function Portfolio() {
   return (
     <section className={styles.portfolio}>
-      <SectionHeader
-        name="Portfolio"
-        className={styles.sectionHeader}
-        title="My latest projects"
-        dark
-      />
+      <Fade
+        duration={1000}
+        distance="80px"
+        delay={200}>
+        <SectionHeader
+          name="Portfolio"
+          className={styles.sectionHeader}
+          title="My latest projects"
+          dark
+        />
+      </Fade>
+        <Fade
+          duration={1000}
+          distance="80px"
+          delay={1200}
+          bottom>
       <Slider>
-        {SLIDES.map((current, index) => (
-          <SwiperSlide key={index}>
-            <Link to={current.to}>
-              <ImageCard
-                src={current.src}
-                alt={current.alt}
-              />
-            </Link>
-          </SwiperSlide>
-        ))}
+          {SLIDES.map((current, index) => (
+            <SwiperSlide key={index}>
+              <Link to={current.to}>
+                <ImageCard
+                  src={current.src}
+                  alt={current.alt}
+                />
+              </Link>
+            </SwiperSlide>
+          ))}
       </Slider>
+        </Fade>
     </section>
   );
 }
