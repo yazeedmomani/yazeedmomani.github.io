@@ -31,7 +31,7 @@ export default function Portfolio() {
         <Fade
           duration={1000}
           distance="80px"
-          delay={1200}
+          delay={200}
           bottom>
       <Slider>
           {SLIDES.map((current, index) => (

@@ -8,7 +8,7 @@ export default function CTA({ className }) {
       <Fade
         duration={1000}
         distance="80px"
-        delay={1200}
+        delay={200}
         bottom>
         <h2>
           What are you wating for? Let's create your stunning, responsive

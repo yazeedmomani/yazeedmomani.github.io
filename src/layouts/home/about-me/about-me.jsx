@@ -9,7 +9,7 @@ export default function AboutMe() {
       <Fade
         duration={1000}
         distance="80px"
-        delay={1200}
+        delay={200}
         bottom>
         <SectionHeader
           name="About Me"
