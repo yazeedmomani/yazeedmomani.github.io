@@ -38,23 +38,12 @@ function Step({ number, title, paragraph, withMargin }) {
       <Fade
         duration={1000}
         distance="80px"
-        delay={200}>
+        delay={200}
+        bottom>
         <span className={`${styles.step} ${withMargin && styles.withMargin}`}>
           {number}
         </span>
-      </Fade>
-      <Fade
-        duration={1000}
-        distance="80px"
-        delay={1200}
-        right>
         <h3>{title}</h3>
-      </Fade>
-      <Fade
-        duration={1000}
-        distance="80px"
-        delay={1200}
-        left>
         <p>{paragraph}</p>
       </Fade>
     </>
