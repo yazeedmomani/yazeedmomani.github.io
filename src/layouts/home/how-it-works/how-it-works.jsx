@@ -1,5 +1,6 @@
 import styles from "./how-it-works.module.scss";
 import SectionHeader from "../../../components/section-header";
+import Fade from "react-reveal/Fade";
 
 const STEPS = [
   {
@@ -34,11 +35,28 @@ const STEPS = [
 function Step({ number, title, paragraph, withMargin }) {
   return (
     <>
-      <span className={`${styles.step} ${withMargin && styles.withMargin}`}>
-        {number}
-      </span>
-      <h3>{title}</h3>
-      <p>{paragraph}</p>
+      <Fade
+        duration={1000}
+        distance="80px"
+        delay={200}>
+        <span className={`${styles.step} ${withMargin && styles.withMargin}`}>
+          {number}
+        </span>
+      </Fade>
+      <Fade
+        duration={1000}
+        distance="80px"
+        delay={1200}
+        right>
+        <h3>{title}</h3>
+      </Fade>
+      <Fade
+        duration={1000}
+        distance="80px"
+        delay={1200}
+        left>
+        <p>{paragraph}</p>
+      </Fade>
     </>
   );
 }
@@ -46,11 +64,17 @@ function Step({ number, title, paragraph, withMargin }) {
 export default function HowItWorks() {
   return (
     <section className={styles.howItWorks}>
-      <SectionHeader
-        name="How It Works"
-        className={styles.sectionHeader}
-        title="craft your website in 4 simple steps"
-      />
+      <Fade
+        duration={1000}
+        distance="80px"
+        delay={2200}
+        bottom>
+        <SectionHeader
+          name="How It Works"
+          className={styles.sectionHeader}
+          title="craft your website in 4 simple steps"
+        />
+      </Fade>
       {STEPS.map(({ NUMBER, TITLE, PARAGRAPH }, index) => (
         <Step
           key={NUMBER}
