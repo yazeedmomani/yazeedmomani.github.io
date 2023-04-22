@@ -5,6 +5,7 @@ import styles from "./nav.module.scss";
 import { Link } from "react-router-dom";
 import Button from "../../../components/button";
 import useWindowDimensions from "../../../hooks/use-window-dimensions";
+import Fade from "react-reveal/Fade";
 
 function renderLinks(viewportWidth, handleMenu) {
   if (viewportWidth >= 900)
@@ -45,10 +46,23 @@ export default function Nav() {
 
   return (
     <nav className={styles.nav}>
-      <Link to="/">
-        <Logo className={styles.logo} />
-      </Link>
-      {renderLinks(width, handleMenu)}
+      <Fade
+        left
+        duration={1000}
+        distance="80px"
+        delay={200}>
+        <Link to="/">
+          <Logo className={styles.logo} />
+        </Link>
+      </Fade>
+      <Fade
+        duration={1000}
+        distance="80px"
+        delay={200}
+        right
+        cascade>
+        {renderLinks(width, handleMenu)}
+      </Fade>
       {showMenu && <Menu setShowMenu={setShowMenu} />}
     </nav>
   );
