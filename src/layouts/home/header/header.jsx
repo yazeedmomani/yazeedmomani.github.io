@@ -9,21 +9,21 @@ export default function Header() {
         <Fade
           duration={1000}
           distance="80px"
-          delay={1400}
+          delay={1200}
           left>
           <span>Hello, It's Me </span>
         </Fade>
         <Fade
           duration={1000}
           distance="80px"
-          delay={1400}
+          delay={1200}
           right>
           <span className={`${styles.primary} ${styles.large}`}>Yazeed</span>
         </Fade>{" "}
         <Fade
           duration={1000}
           distance="80px"
-          delay={1400}
+          delay={1200}
           left>
           <span>And I am a </span>{" "}
           <span className={styles.primary}>Front-End Developer</span>
@@ -32,14 +32,14 @@ export default function Header() {
       <Fade
         duration={1000}
         distance="80px"
-        delay={1400}
+        delay={1200}
         right>
         <span>Designing Tomorrow's Web, One Pixel at a Time</span>
       </Fade>
       <Fade
         duration={1000}
         distance="80px"
-        delay={1400}
+        delay={1200}
         bottom>
         <div>
           <Button
